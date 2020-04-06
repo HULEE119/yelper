@@ -7,7 +7,7 @@ class Category < ApplicationRecord
         foreign_key: :category_id
 
     has_many :categorized_businesses,
-        through: :categorized_businesses,
+        through: :business_categories,
         source: :business
 
 end

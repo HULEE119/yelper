@@ -1,5 +1,4 @@
 class BusinessCategory < ApplicationRecord
-    validates :business_id, uniqueness: { scope: :category_id }
 
     belongs_to :business,
         class_name: :Business,
