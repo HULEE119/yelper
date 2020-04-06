@@ -1,0 +1,19 @@
+current directory: /Users/Christina/Desktop/fullstack_project/yelper/vendor/bundle/ruby/2.5.0/gems/byebug-11.1.1/ext/byebug
+/Users/Christina/.rbenv/versions/2.5.1/bin/ruby -I /Users/Christina/.rbenv/versions/2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200405-92159-qfi17w.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Christina/Desktop/fullstack_project/yelper/vendor/bundle/ruby/2.5.0/gems/byebug-11.1.1/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/Christina/Desktop/fullstack_project/yelper/vendor/bundle/ruby/2.5.0/gems/byebug-11.1.1/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/Christina/Desktop/fullstack_project/yelper/vendor/bundle/ruby/2.5.0/gems/byebug-11.1.1/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20200405-92159-bsy6ni/byebug

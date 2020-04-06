@@ -1,0 +1,15 @@
+current directory: /Users/Christina/Desktop/fullstack_project/yelper/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.6/ext/bootsnap
+/Users/Christina/.rbenv/versions/2.5.1/bin/ruby -I /Users/Christina/.rbenv/versions/2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200405-92159-1r0kijf.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Christina/Desktop/fullstack_project/yelper/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.6/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/Christina/Desktop/fullstack_project/yelper/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.6/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/Christina/Desktop/fullstack_project/yelper/vendor/bundle/ruby/2.5.0/gems/bootsnap-1.4.6/ext/bootsnap
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20200405-92159-1w8cxq5/bootsnap
