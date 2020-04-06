@@ -1,0 +1,15 @@
+current directory: /Users/Christina/Desktop/fullstack_project/yelper/vendor/bundle/ruby/2.5.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+/Users/Christina/.rbenv/versions/2.5.1/bin/ruby -I /Users/Christina/.rbenv/versions/2.5.1/lib/ruby/site_ruby/2.5.0 -r ./siteconf20200406-25914-7b0do0.rb extconf.rb
+creating Makefile
+
+current directory: /Users/Christina/Desktop/fullstack_project/yelper/vendor/bundle/ruby/2.5.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR=" clean
+
+current directory: /Users/Christina/Desktop/fullstack_project/yelper/vendor/bundle/ruby/2.5.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+current directory: /Users/Christina/Desktop/fullstack_project/yelper/vendor/bundle/ruby/2.5.0/gems/debug_inspector-0.0.3/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20200406-25914-eyo8ae
