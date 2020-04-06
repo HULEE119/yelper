@@ -1,3 +1,11 @@
+# == Schema Information
+#
+# Table name: business_categories
+#
+#  id          :bigint           not null, primary key
+#  business_id :integer          not null
+#  category_id :integer          not null
+#
 class BusinessCategory < ApplicationRecord
 
     belongs_to :business,

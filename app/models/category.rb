@@ -1,3 +1,10 @@
+# == Schema Information
+#
+# Table name: categories
+#
+#  id            :bigint           not null, primary key
+#  business_type :string           not null
+#
 class Category < ApplicationRecord
     validates :business_type, presence: true 
     validates :business_type, uniqueness: true
