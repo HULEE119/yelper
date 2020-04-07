@@ -10,4 +10,4 @@ const rootReducer = combineReducers({
     errors: errorsReducer
   });
   
-  export default rootReducer;
+export default rootReducer;
