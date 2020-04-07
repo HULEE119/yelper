@@ -9,9 +9,9 @@ import { RECEIVE_CURRENT_USER, LOGOUT_CURRENT_USER } from '../actions/session_ac
     
     switch(action.type) {
       case RECEIVE_CURRENT_USER:
-        return { id: action.currentUser.id };
+        return Object.assign({}, state, { id: action.currentUser.id });
       case LOGOUT_CURRENT_USER:
-        return _nullUser;
+        return Object.assign({}, state, _nullUser);
       default:
         return state;
     }
