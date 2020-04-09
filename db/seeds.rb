@@ -9,9 +9,10 @@
 User.destroy_all
 
 demo_user = User.create({
+    id: 10019,
     first_name: "Yelper", 
     last_name: "Y.", 
     email: "yelper@yepler.net", 
     password: "password", 
-    zip_code: "11365"
+    zip_code: "10019" 
 })
