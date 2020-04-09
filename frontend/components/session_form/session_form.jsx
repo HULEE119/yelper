@@ -88,7 +88,7 @@ class SessionForm extends React.Component {
                     </div>
 
                     <div className="session-form-image">
-                        <img src="assets/signup_illustration.png" className="session-form-image-content" alt=""/>
+                        <img src={window.signupIllustration} className="session-form-image-content" alt="signup-illustration"/>
                     </div>
 
                 </div>
@@ -170,7 +170,7 @@ class SessionForm extends React.Component {
 
                     </div>
                         <div className="session-form-image">
-                            <img src="assets/signup_illustration.png" className="session-form-image-content" alt=""/>
+                            <img src={window.signupIllustration} className="session-form-image-content" alt="signup-illustration"/>
                         </div>
                 </div>
             </div>
