@@ -1,3 +1,163 @@
-.nav-header-bar {
-    
+.nav-header-homepage {
+    background-image: url(https://s3-media0.fl.yelpcdn.com/assets/srv0/yelp_large_assets/469f5b12df16/assets/img/home/hero_photos/ubaw1eG3Pf4qCmKx-pkC4g.jpg);
+    height: 570px;
+    padding-top: 30px;
+    background-size: cover;
 }
+
+.header-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    height: 36px;
+    align-content: center;
+    margin: auto;
+}
+
+.header-main {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+
+    padding-top: 80px;
+    align-content: center;
+    margin: auto;
+}
+
+.header-logo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 55px;
+    line-height: 75px;
+    color: black;
+}
+
+.header-search-box {
+    display: flex;
+    justify-content: space-evenly;
+    float: left;
+    margin-top: 65px;
+    margin-bottom: 18px;
+}
+
+.search-bar-find, .search-bar-near, .search-bar-search {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 45px;
+    color: #666666;
+}
+
+.search-bar-find {
+    background-color: white;
+    border-radius: 4px 0 0 4px;
+    width: 45.99%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.search-bar-near {
+    background-color: white;
+    width: 45.99%;
+}
+
+.search-bar-search {
+    width: 7.99%;
+    border-radius: 0 4px 4px 0;
+    background: #d32323;
+    text-align: center;
+}
+
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 168px;   
+}
+
+.header-accountants, .header-restaurants, .header-home-services, .header-delivery {
+}
+
+.header-nav > ul li {
+    padding: 0 12px 0 12px;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 18px;
+    font-weight: 700;
+    color: white;
+    list-style-type: none;
+} 
+
+.fas {
+    margin-right: 5px;
+}
+
+.fas > fa-search {
+    font-size: 12;
+}
+
+.header-nav > ul li:hover {
+    text-decoration: underline;
+}
+
+.header-links {
+    display: flex;
+}
+
+.header-btns-left {
+    display: flex;
+    float: left;
+}
+
+.header-btns-right {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-write-a-review, .btn-events, .btn-talk, .btn-login, .btn-signup {
+    padding: 9px 12px 10px;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.btn-login {
+    margin-right: 15px;
+}
+
+.btn-login:hover {
+    border-bottom: 2px solid white;
+}
+
+.btn-write-a-review:hover {
+    border-bottom: 2px solid white;
+}
+
+.btn-events:hover {
+    border-bottom: 2px solid white;
+}
+
+.btn-talk:hover {
+    border-bottom: 2px solid white;
+}
+
+.btn-signup {
+    padding: 7px 22px 7px;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.btn-signup:hover {
+    padding: 7px 22px 7px;
+    background-color: white;
+    color: gray;
+}
+
+

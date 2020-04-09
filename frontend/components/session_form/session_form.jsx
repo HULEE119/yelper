@@ -23,6 +23,7 @@ class SessionForm extends React.Component {
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleUpdate = this.handleUpdate.bind(this);
         this.demoLogin = this.demoLogin.bind(this);
+        this.handleClearErrors = this.handleClearErrors.bind(this);
     }
 
     handleSubmit(e) {
@@ -44,6 +45,11 @@ class SessionForm extends React.Component {
             password: "password" })
     }
 
+    handleClearErrors(e) {
+        e.preventDefault();
+        this.props.clearSessionErrors();
+    }
+
     componentDidMount() {
         this.props.clearSessionErrors();
     }
@@ -54,77 +60,124 @@ class SessionForm extends React.Component {
         const { errors } = this.props;
 
         const existingUser = () => (
-            <div className="session-form">
-                <div className="signup-wrapper">
-                    <ul className="errors">
-                        { errors.map((error, idx) => (<li key={idx}>{error}</li>)) }
-                    </ul>
-
-                    <h2>Log In to Yelper!!</h2>
-                    <div><h3>New To Yelper?</h3><Link to="/signup">Sign up!</Link></div>
-                    <p>By logging in, you agree to have fun.</p>
-                    <div>
-                        <input type="email" onChange={this.handleUpdate('email')} placeholder="Email" />
-                        <input type="password" onChange={this.handleUpdate('password')} placeholder="Password" />
-                        <button onClick={this.handleSubmit}>{this.props.formType}</button>
-                        <button onClick={this.demoLogin}>Demo Account</button>
-                    </div>
+            <div>
+                <div className="header-bar">
+                    <a href="/" className="header-text">Yelper</a>
                 </div>
+
+                <div className={ (this.props.errors.length === 0) ? "" : "errors" }>
+                    <ul className={ (this.props.errors.length === 0) ? "" : "signin-errors-list" }>
+                    <i onClick={this.handleClearErrors} className={ (this.props.errors.length === 0) ? "" : "fas fa-times" } />
+                        { errors.map((error, idx) => (<li key={idx}>{error}.</li>)) }
+                    </ul>
+                </div>
+
+                <div className="session-form">
+
+                    <div className="signin-wrapper">
+                        <p className="signin-notification">Log In to Yelper</p>
+                        <p className="new-signup-notification">New To Yelper? <span className="new-signup-link"><Link to="/signup">Sign up!</Link></span></p>
+                        <p className="legal-copy">By logging in, you will be logged in.</p>
+                        <div className="signin-form">
+                            <input className="signin-email" type="email" onChange={this.handleUpdate('email')} placeholder="Email" />
+                            <input className="signin-password" type="password" onChange={this.handleUpdate('password')} placeholder="Password" />
+                            <button className="btn-session-login" onClick={this.handleSubmit}>{this.props.formType}</button>
+                            <button className="btn-session-demouser" onClick={this.demoLogin}>Demo Account</button>
+                        </div>
+                        <p className="bottom-new-signup-notification">New To Yelper? <span className="new-signup-link"><Link to="/signup">Sign up!</Link></span></p>
+                    </div>
+
+                    <div className="session-form-image">
+                        <img src="assets/signup_illustration.png" className="session-form-image-content" alt=""/>
+                    </div>
+
+                </div>
+
             </div>
         );
 
         const newUser = () => (
-            <div className="session-form">
-                <div className="signup-wrapper">
-                    <ul className="errors">
-                        { errors.map((error, idx) => (<li key={idx}>{error}</li>)) }
-                    </ul>
-                    <div>
-                        <h2>Sign Up For Yelper!!</h2>
-                        <h4>Connect with great local businesses!!!</h4>
-                    </div>
-                    <form>
-                        <div className="signup-box">
-                            <input type="text" onChange={this.handleUpdate('first_name')} placeholder="First Name"/>
-                            <input type="text" onChange={this.handleUpdate('last_name')} placeholder="Last Name"/>
-                            <input type="email" onChange={this.handleUpdate('email')} placeholder="Email"/>
-                            <input type="password" onChange={this.handleUpdate('password')} placeholder="Password"/>
-                            <input type="text" onChange={this.handleUpdate('zip_code')} placeholder="ZIP Code"/>
-                        </div>
-                        <div>
-                            <h3>Birthday Optional</h3>
-                            <select name="sign-up birthday-month">
-                                <option value="Month">Month</option>
-                                <option value="Jan">Jan</option>
-                                <option value="Feb">Feb</option>
-                                <option value="Mar">Mar</option>
-                                <option value="Apr">Apr</option>
-                                <option value="May">May</option>
-                                <option value="Jun">Jun</option>
-                                <option value="Jul">Jul</option>
-                                <option value="Aug">Aug</option>
-                                <option value="Sep">Sep</option>
-                                <option value="Oct">Oct</option>
-                                <option value="Nov">Nov</option>
-                                <option value="Dec">Dec</option>
-                            </select>
-                            <select name="sign-up birthday-day">
-                                { days.map((day, idx) => <option key={day} value={day}>{day}</option>) }
-                            </select>
-                            <select name="sign-up birthday-year">
-                                { years.map((year, idx) => <option key={year} value={year}>{year}</option>) }
-                            </select>
+            <div>
+                <div className="header-bar">
+                    <a href="/" className="header-text">Yelper</a>
+                </div>
 
+                <div className={ (this.props.errors.length === 0) ? "" : "errors" }>
+                    <ul className={ (this.props.errors.length === 0) ? "" : "signup-errors-list" }>
+                    <i onClick={this.handleClearErrors} className={ (this.props.errors.length === 0) ? "" : "fas fa-times" } />
+                        { errors.map((error, idx) => (<li key={idx}>{error}.</li>)) }
+                    </ul>
+                </div>
+
+                <div className="session-form">
+                    <div className="signup-wrapper">
+                        <p className="signup-form-header">Sign Up For Yelper</p>
+                        <p className="signup-notification">Connect with great local businesses</p>
+                        <p className="legal-copy">By continuing, you will be signed up.</p>
+
+                        <form>
+                            <div className="signup-box">
+                                <div className="signup-fullname-box">
+                                    <input className="signup-first-name" type="text" onChange={this.handleUpdate('first_name')} placeholder="First Name"/>
+                                    <input className="signup-last-name" type="text" onChange={this.handleUpdate('last_name')} placeholder="Last Name"/>
+                                </div>
+                                <input type="email" onChange={this.handleUpdate('email')} placeholder="Email"/>
+                                <input type="password" onChange={this.handleUpdate('password')} placeholder="Password"/>
+                                <input type="text" onChange={this.handleUpdate('zip_code')} placeholder="ZIP Code"/>
+                                <p className="signup-birthday-subheader">Birthday</p>
+                            </div>
+
+                            <div className="signup-birthday-box">
+                                <ul>
+                                    <li className="signup-birthday-month">
+                                        <select>
+                                            <option value="Month">Month</option>
+                                            <option value="Jan">Jan</option>
+                                            <option value="Feb">Feb</option>
+                                            <option value="Mar">Mar</option>
+                                            <option value="Apr">Apr</option>
+                                            <option value="May">May</option>
+                                            <option value="Jun">Jun</option>
+                                            <option value="Jul">Jul</option>
+                                            <option value="Aug">Aug</option>
+                                            <option value="Sep">Sep</option>
+                                            <option value="Oct">Oct</option>
+                                            <option value="Nov">Nov</option>
+                                            <option value="Dec">Dec</option>
+                                        </select>
+                                    </li>
+                                    <li className="signup-birthday-day">
+                                        <select>
+                                            { days.map((day, idx) => <option key={day} value={day}>{day}</option>) }
+                                        </select>
+                                    </li>
+                                    <li className="signup-birthday-year">
+                                        <select>
+                                            { years.map((year, idx) => <option key={year} value={year}>{year}</option>) }
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div className="signup-form-btns">
+                                <button className="btn-submit-signup" onClick={this.handleSubmit}>{this.props.formType}</button>
+                                <button className="btn-submit-demosignup" onClick={this.demoLogin}>Demo Account</button>
+                            </div>
+                            
+                            <p className="bottom-signin-notification">Already a user? <span className="backto-login-link"><Link to="/login">Log In</Link></span></p>
+                        </form>
+
+
+                    </div>
+                        <div className="session-form-image">
+                            <img src="assets/signup_illustration.png" className="session-form-image-content" alt=""/>
                         </div>
-                        <button onClick={this.handleSubmit}>{this.props.formType}</button>
-                        <button onClick={this.demoLogin}>Demo Account</button>
-                        <div><h3>Already a user?</h3><Link to="/login">Log In</Link></div>
-                    </form>
                 </div>
             </div>
         )
 
         return (this.props.formType === "Sign Up") ? newUser() : existingUser() 
+
     }
 };
 
