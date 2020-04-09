@@ -8,12 +8,16 @@ import LoginFormContainer from './session_form/login_form_container';
 import SignupFormContainer from './session_form/signup_form_container';
 import PageFooter from './footer/footer';
 
+
 const App = () => (
     <div>
         {/* <PageFooter /> */}
-        <Route exact path="/" component={NavigationContainer} />
+        <header>
+            <Route exact path="/" component={NavigationContainer} />
+        </header>
         <AuthRoute path="/login" component={LoginFormContainer} />
         <AuthRoute path="/signup" component={SignupFormContainer} />
+        <Route exact path="/businesses/:businessId" component={BusinessShowContainer} />
     </div>
 );
 

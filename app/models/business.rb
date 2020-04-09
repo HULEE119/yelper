@@ -28,4 +28,8 @@ class Business < ApplicationRecord
     has_many :reviews,
         class_name: :Review,
         foreign_key: :business_id
+
+    def average_rating
+        reviews.average(:rating)
+    end
 end

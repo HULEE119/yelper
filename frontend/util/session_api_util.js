@@ -1,8 +1,8 @@
-export const postUser = (user) => (
+export const postUser = (apple) => (
     $.ajax({
         method: 'POST',
         url: `/api/users`,
-        data: { user }
+        data: { user: apple }
     })
 );
 

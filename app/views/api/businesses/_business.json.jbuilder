@@ -1,0 +1,1 @@
+json.extract! business, :id, :business_name, :price_range, :address, :city, :state, :zip_code, :business_site, :phone_number, :review_ids
