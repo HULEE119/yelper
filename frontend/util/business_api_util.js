@@ -5,18 +5,18 @@ export const fetchBusinesses = () => (
     })
 );
 
-export const fetchBusiness = (id) => (
+export const fetchBusiness = (businessId) => (
     $.ajax({
         method: 'GET',
-        url: `/api/businesses/${id}`
+        url: `/api/businesses/${businessId}`
     })
 );
 
-export const fetchReviews = (bizId) => (
+export const fetchReviews = (businessId) => (
     $.ajax({
         method: 'GET',
         url: `/api/reviews`,
-        data: { business_id: bizId }
+        data: { business_id: businessId }
 
     })
 );

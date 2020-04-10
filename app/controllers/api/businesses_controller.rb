@@ -1,11 +1,15 @@
 class Api::BusinessesController < ApplicationController
     def index 
         @businesses = Business.all 
-        render :index  
-        # render "/api/businesses/index"
+        render "/api/businesses/index"
     end 
 
     def show
-        @business = Business.find(params[:id])
+        @business = Business.find_by(id: params[:id])
+        if @business
+            render :show
+        else
+            render json: ['Business does not exist']
+        end
     end 
 end

@@ -20,7 +20,7 @@ export const fetchAllBusinesses = () => dispatch => (
         .then( businesses => dispatch(receiveAllBusinesses(businesses)))
 );
 
-export const fetchBusiness = (id) => dispatch => (
-    BusinessApiUtil.fetchBusiness(id)
+export const fetchBusiness = (businessId) => dispatch => (
+    BusinessApiUtil.fetchBusiness(businessId)
         .then( business => dispatch(receiveBusiness(business)))
 );

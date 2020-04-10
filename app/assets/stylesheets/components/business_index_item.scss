@@ -1,0 +1,37 @@
+.business-index-item-page-container {
+
+    border: 1px solid darkgoldenrod;
+
+    display: grid;
+    justify-content: start;
+    grid-template-columns: auto auto;
+
+}
+
+// image
+.business-index-item-image-container {
+    width: 153px;
+    height: 153px;
+    margin: 25px;
+
+    border: 1px solid red;
+
+}
+
+
+// business details
+.business-index-item-details-container {
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    border: 1px solid rgb(247, 0, 255);
+
+}
+
+.business-index-item-bizname {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}

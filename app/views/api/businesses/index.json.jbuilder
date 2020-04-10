@@ -1,5 +1,5 @@
-@businesses.each do |biz|
-    json.set! biz.id do 
-        json.partial! 'business', business: biz 
+@businesses.each do |business|
+    json.set! business.id do 
+        json.partial! 'business', business: business 
     end
 end

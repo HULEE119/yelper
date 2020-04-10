@@ -6,6 +6,10 @@
     margin-bottom: 50px;
 }
 
+.nav-header-homepage-content {
+    min-width: 960px;
+}
+
 .header-btns {
     display: flex;
     justify-content: space-between;
@@ -46,6 +50,15 @@
     margin-bottom: 18px;
 }
 
+.header-search-box input {
+    margin-left: 10px;
+    line-height: 45px;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 18px;
+}
+
+
 .search-bar-find, .search-bar-near, .search-bar-search {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
@@ -74,13 +87,17 @@
     text-align: center;
 }
 
+.fa-search {
+    color: white;
+}
+
 
 .header-nav {
     display: flex;
     justify-content: center;
     align-content: center;
     text-align: center;
-    padding-bottom: 168px;   
+    padding-bottom: 168px;  
 }
 
 .header-accountants, .header-restaurants, .header-home-services, .header-delivery {

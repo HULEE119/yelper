@@ -20,7 +20,7 @@ demo_user = User.create({
 })
 
 businesses = Business.create([
-    {
+    {   
         business_name: "Central Park",
         address: "Park in New York City",
         city: "New York, ",

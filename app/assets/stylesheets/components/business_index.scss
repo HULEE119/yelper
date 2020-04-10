@@ -1,0 +1,89 @@
+.business-index-page-container-top-border {
+    margin-top: 30px;
+    border-top: 1px solid rgb(238, 238, 239);
+}
+.business-index-page-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    width: 90%;
+    border: 3px solid green;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto;
+    min-width: 0px;
+    overflow: hidden;
+
+
+    border: 1px solid rgb(238, 238, 239);
+}
+
+.business-index-page-container-header {
+
+    border: 2px solid salmon;
+}
+
+.business-index-page-container-header-text {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    padding-left: 30px;
+    line-height: 30px;
+    color: #2b273c;
+}
+
+.business-index-page-container-subheader {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: start;
+
+
+}
+
+.business-index-page-container-subheader > p:hover {
+    background-color: #999;
+    color: white;
+}
+
+.business-index-page-container-subheader-1, .business-index-page-container-subheader-2, .business-index-page-container-subheader-3 {
+    margin-top: 35px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    margin-right: auto;
+
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(43, 39, 60);
+
+    border: 1px solid rgb(187, 186, 192);
+    border-radius: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+
+}
+
+.business-index-page-subcontainer {
+    display: grid;
+    grid-template-columns: 75% auto;
+
+    border: 1px solid red;
+
+
+}
+
+.business-index-page-business-list {
+
+    border: 1px solid yellowgrrgb(238, 238, 239);
+
+}
+
+.business-index-page-business-map {
+
+    border: 1px solid blue;
+}
+
