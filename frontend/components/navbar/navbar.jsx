@@ -20,7 +20,7 @@ const Navigation = ({ currentUser, logout }) => {
 
         <div className="header-main">
           <div className="header-logo">
-              <Link to="/">yelper</Link>
+              <Link to="/">Yelper</Link>
           </div>
 
           <div className="header-search-box">

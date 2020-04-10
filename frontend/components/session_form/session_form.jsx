@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PageHeader from '../header/page_header';
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -60,10 +61,8 @@ class SessionForm extends React.Component {
         const { errors } = this.props;
 
         const existingUser = () => (
-            <div>
-                <div className="header-bar">
-                    <a href="/" className="header-text">Yelper</a>
-                </div>
+            <div className="existing-user-form-container">
+                <PageHeader />
 
                 <div className={ (this.props.errors.length === 0) ? "" : "errors" }>
                     <ul className={ (this.props.errors.length === 0) ? "" : "signin-errors-list" }>
@@ -79,8 +78,8 @@ class SessionForm extends React.Component {
                         <p className="new-signup-notification">New To Yelper? <span className="new-signup-link"><Link to="/signup">Sign up!</Link></span></p>
                         <p className="legal-copy">By logging in, you will be logged in.</p>
                         <div className="signin-form">
-                            <input className="signin-email" type="email" onChange={this.handleUpdate('email')} placeholder="Email" />
-                            <input className="signin-password" type="password" onChange={this.handleUpdate('password')} placeholder="Password" />
+                            <input type="email" onChange={this.handleUpdate('email')} placeholder="Email" />
+                            <input type="password" onChange={this.handleUpdate('password')} placeholder="Password" />
                             <button className="btn-session-login" onClick={this.handleSubmit}>{this.props.formType}</button>
                             <button className="btn-session-demouser" onClick={this.demoLogin}>Demo Account</button>
                         </div>
@@ -97,10 +96,8 @@ class SessionForm extends React.Component {
         );
 
         const newUser = () => (
-            <div>
-                <div className="header-bar">
-                    <a href="/" className="header-text">Yelper</a>
-                </div>
+            <div className="new-user-form-container">
+                <PageHeader />
 
                 <div className={ (this.props.errors.length === 0) ? "" : "errors" }>
                     <ul className={ (this.props.errors.length === 0) ? "" : "signup-errors-list" }>
@@ -121,9 +118,9 @@ class SessionForm extends React.Component {
                                     <input className="signup-first-name" type="text" onChange={this.handleUpdate('first_name')} placeholder="First Name"/>
                                     <input className="signup-last-name" type="text" onChange={this.handleUpdate('last_name')} placeholder="Last Name"/>
                                 </div>
-                                <input type="email" onChange={this.handleUpdate('email')} placeholder="Email"/>
-                                <input type="password" onChange={this.handleUpdate('password')} placeholder="Password"/>
-                                <input type="text" onChange={this.handleUpdate('zip_code')} placeholder="ZIP Code"/>
+                                <input type="email" onChange={this.handleUpdate('email')} placeholder="Email" />
+                                <input type="password" onChange={this.handleUpdate('password')} placeholder="Password" />
+                                <input type="text" onChange={this.handleUpdate('zip_code')} placeholder="ZIP Code" />
                                 <p className="signup-birthday-subheader">Birthday</p>
                             </div>
 

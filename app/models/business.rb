@@ -4,7 +4,6 @@
 #
 #  id            :bigint           not null, primary key
 #  business_name :string           not null
-#  price_range   :string           not null
 #  address       :string           not null
 #  city          :string           not null
 #  state         :string           not null
@@ -15,7 +14,7 @@
 #  updated_at    :datetime         not null
 #
 class Business < ApplicationRecord
-    validates :business_name, :price_range, :address, :city, :state, :zip_code, :business_site, :phone_number, presence: true
+    validates :business_name, :address, :city, :state, :zip_code, :business_site, :phone_number, presence: true
 
     has_many :business_categories,
         class_name: :BusinessCategory,

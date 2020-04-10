@@ -3,6 +3,7 @@
     height: 570px;
     padding-top: 30px;
     background-size: cover;
+    margin-bottom: 50px;
 }
 
 .header-btns {
@@ -32,7 +33,9 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 55px;
     line-height: 75px;
-    color: black;
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .header-search-box {

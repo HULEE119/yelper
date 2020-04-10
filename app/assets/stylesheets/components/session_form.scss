@@ -7,12 +7,17 @@
     padding: 0 18px 0 18px;
 }
 
+.existing-user-form-container, .new-user-form-container {
+
+    
+}
+
 // signin form
 .signin-wrapper {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: auto;
     width: 369px;
-    height: 461px;
+    height: 465px;
     text-align: center;
 }
 
@@ -130,7 +135,6 @@
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: auto;
     width: 369px;
-    height: 461px;
     text-align: center;
 }
 
@@ -293,13 +297,12 @@
     height: 63px;
 }
 
-.header-text {
+#header-text {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: black;
     font-size: 35px;
-    -webkit-text-fill-color: black; 
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px black;
     display: flex;
     justify-content: center;
     padding-top: 10px;
@@ -311,7 +314,7 @@
     background: #FCD6D3;
     width: 960px;
     margin: auto;
-    line-height: 60px;
+    line-height: 35px;
     margin-top: 15px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 16px;

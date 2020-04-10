@@ -7,6 +7,8 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 User.destroy_all
+Business.destroy_all 
+
 
 demo_user = User.create({
     id: 10019,
@@ -16,3 +18,42 @@ demo_user = User.create({
     password: "password", 
     zip_code: "10019" 
 })
+
+businesses = Business.create([
+    {
+        business_name: "Central Park",
+        address: "Park in New York City",
+        city: "New York, ",
+        state: "NY, ",
+        zip_code: "10019",
+        business_site: "https://www.centralparknyc.org/",
+        phone_number: "2123106600" 
+    },
+    {
+        business_name: "Times Square",
+        address: "Times Square Manhattan",
+        city: "New York, ",
+        state: "NY, ",
+        zip_code: "10036",
+        business_site: "https://www.timessquarenyc.org/",
+        phone_number: "2127681560" 
+    },
+    {
+        business_name: "Empire State Building",
+        address: "20 W 34th St",
+        city: "New York, ",
+        state: "NY, ",
+        zip_code: "10001",
+        business_site: "https://www.esbnyc.com/",
+        phone_number: "2127363100" 
+    },
+    {
+        business_name: "One World Trade Center",
+        address: "285 Fulton St",
+        city: "New York, ",
+        state: "NY, ",
+        zip_code: "10007",
+        business_site: "https://www.onewtc.com/",
+        phone_number: "2122576600" 
+    },
+])
