@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PageHeader from '../header/page_header';
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -62,7 +61,9 @@ class SessionForm extends React.Component {
 
         const existingUser = () => (
             <div className="existing-user-form-container">
-                <PageHeader />
+                    <div className="header-bar">
+                        <a href="/" id="header-text">Yelper</a>
+                    </div>
 
                 <div className={ (this.props.errors.length === 0) ? "" : "errors" }>
                     <ul className={ (this.props.errors.length === 0) ? "" : "signin-errors-list" }>
@@ -97,7 +98,9 @@ class SessionForm extends React.Component {
 
         const newUser = () => (
             <div className="new-user-form-container">
-                <PageHeader />
+                    <div className="header-bar">
+                        <a href="/" id="header-text">Yelper</a>
+                    </div>
 
                 <div className={ (this.props.errors.length === 0) ? "" : "errors" }>
                     <ul className={ (this.props.errors.length === 0) ? "" : "signup-errors-list" }>

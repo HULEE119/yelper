@@ -1,0 +1,165 @@
+.biz-page-header-container {
+    display: flex;
+    float: left;
+    
+    width: 100%;
+    padding-top: 10px;
+
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #d32323;
+
+
+}
+
+// logo
+.biz-page-header-logo {
+    width: 100px;
+    height: 50px;
+    margin-left: 75px;
+    line-height: 75px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px #000000;
+    margin-bottom: 35px;
+
+}
+
+#biz-nav-text {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 40px;
+}
+
+
+
+// search bar
+.biz-page-header-searchbar {
+    display: flex;
+    width: 650px;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 50px;
+
+    position: relative;
+
+}
+
+.biz-page-header-searchbar-find, .biz-page-header-searchbar-near, .biz-page-header-searchbar-search {
+    font-weight: 400;
+    line-height: 22px;
+    background-color: white;
+    padding-left: 25px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 25px;
+}
+
+.biz-page-header-searchbar-find {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    display: block;
+    width: 250px;
+}
+.biz-page-header-searchbar-find input {
+    margin-left: 10px;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+.biz-page-header-searchbar-near {
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    display: block;
+    width: 250px;
+}
+
+.biz-page-header-searchbar-near input {
+    margin-left: 10px;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 16px;
+}
+
+.biz-page-header-searchbar-search {
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    background-color: #c00b0b;
+}
+
+.biz-page-header-logout {
+
+    height: 50px;
+    margin-top: 25px;
+
+
+}
+
+.biz-page-header-logout label {
+
+    border: 1px solid black;
+    border-radius: 4px;
+
+    padding-left: 25px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-right: 25px;
+
+    font-weight: 700;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    display: block;
+    text-align: center;
+    width: 75px;
+    margin-top: -10px;
+    margin-left: 40px;
+}
+
+
+
+// user login signup 
+.biz-page-header-user {
+    display: flex;
+    width: 350px;
+    height: 35px;
+    margin-right: 50px;
+    cursor: pointer;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.biz-page-header-user-login-link, .biz-page-header-user-signup-link, .biz-page-header-user-logout-link, .biz-page-header-user-loggedin-link {
+    display: flex;
+    width: 65px;
+    border: 1px solid #2b273c;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    // line-height: 22px;
+    padding: 8px 16px 8px 16px;
+    margin-left: 15px;
+}
+
+.biz-page-header-user-login-link:hover {
+    background-color: white;
+}
+
+.biz-page-header-user-signup-link:hover {
+    background-color: white;
+}
+
+.biz-page-header-user-logout-link {
+    border: 1px solid transparent;
+
+    background-color: #c00b0b;
+}
+
+.biz-page-header-user-logout-link:hover {
+    background-color: white;
+}

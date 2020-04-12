@@ -1,27 +1,40 @@
 .business-index-page-container-top-border {
-    margin-top: 30px;
     border-top: 1px solid rgb(238, 238, 239);
 }
+
 .business-index-page-container {
+    // min-width: 0px;
+    // overflow: hidden;
+    // grid-template-columns: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 100px;
     margin-bottom: 50px;
     width: 90%;
-    border: 3px solid green;
+    height: 1000px;
     padding: 10px;
-    display: grid;
-    grid-template-columns: auto;
-    min-width: 0px;
-    overflow: hidden;
+    // display: flex;
+    justify-content: center;
 
+}
 
-    border: 1px solid rgb(238, 238, 239);
+.business-index-page-container-top-nav {
+    //     width: 960px;
+
+    // margin-left: auto;
+
+    // margin-right: auto;
 }
 
 .business-index-page-container-header {
+    display: block;
+    width: 960px;
 
-    border: 2px solid salmon;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    // border: 3px solid brown;
 }
 
 .business-index-page-container-header-text {
@@ -34,11 +47,10 @@
 }
 
 .business-index-page-container-subheader {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: start;
-
-
+    display: flex;
+    width: 450px;
+    margin-left: auto;
+    margin-right: 70%;
 }
 
 .business-index-page-container-subheader > p:hover {
@@ -68,22 +80,28 @@
 }
 
 .business-index-page-subcontainer {
-    display: grid;
-    grid-template-columns: 75% auto;
+    display: flex;
 
     border: 1px solid red;
 
+    width: 960px;
+    height: 1000px;
+
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
 .business-index-page-business-list {
-
+    width: 650px;
+    height: 180px;
     border: 1px solid yellowgrrgb(238, 238, 239);
 
 }
 
 .business-index-page-business-map {
-
+    width: 300px;
+    height: 450px;
     border: 1px solid blue;
 }
 

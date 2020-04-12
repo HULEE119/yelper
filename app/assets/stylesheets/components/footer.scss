@@ -1,21 +1,3 @@
-// .page-footer-container {
-//     display: block;
-//     position: absolute;
-//     bottom: 0px;
-
-//     width: 100%;
-//     height: 640px;
-//     border: 1px solid green;
-
-// }
-
-// .footer-bar {
-//     position: fixed;
-//     width: 1000%;
-//     bottom: 0px;
-//     border: 1px solid red;
-// }
-
 #page-container {
     position: relative;
     min-height: 100vh;
@@ -27,7 +9,8 @@
   
 .footer {
     position: absolute;
-    bottom: 0;
+    margin-bottom: 0px;
+    margin-top: 250px;
     width: 100%;
     height: 280px;            /* Footer height */
     background-color: #F5F5F5;
@@ -65,15 +48,15 @@
     display: flex;
 }
 
-.footer-nav-bar > ul li {
+
+#footer-nav-title-github, #footer-nav-title-linkedin, #footer-nav-title-angellist {
+    font-size: 24px;
     margin-left: 15px;
     margin-right: 15px;
     padding: 0 15px;
 
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    size: 16px;
     line-height: 21px;
     color: #d32323;
     width: 80%;
+    
 }

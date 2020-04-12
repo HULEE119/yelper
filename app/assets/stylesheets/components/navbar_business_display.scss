@@ -1,0 +1,72 @@
+// homepage business section
+.homepage-business-display-header {
+
+}
+
+.homepage-business-display-topheader {
+    display: flex;
+    justify-content: center;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 21px;
+    color: #d32323;
+    font-weight: 700;
+}
+
+.homepage-business-display-subheader {
+    display: flex;
+    justify-content: space-around;    
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 25px;
+
+    color: #333;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.homepage-business-display-subheader > div:hover {
+    border-bottom: 2px solid #d32323;
+    padding-bottom: 13px;
+    margin-bottom: -17px;
+}
+
+.homepage-business-display {
+    width: 960px;
+    height: 700px;
+    padding-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+.homepage-business-individual-display {
+    display: flex;
+    float: left;
+
+}
+
+.homepage-business-individual-display-1, .homepage-business-individual-display-2, .homepage-business-individual-display-3 {
+    width: 300px;
+    height: 350px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+}
+
+.homepage-business-individual-display-1-top, .homepage-business-individual-display-2-top, .homepage-business-individual-display-3-top {
+    height: 300px;
+
+    border: 2px solid blueviolet;
+}
+
+.homepage-business-individual-display-1-bottom, .homepage-business-individual-display-2-bottom, .homepage-business-individual-display-3-bottom {
+    height: 45px;
+
+    border: 2px solid greenyellow;
+
+}
