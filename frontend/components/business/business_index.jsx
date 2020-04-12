@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import BusinessIndexItem from './business_index_item';
+import BusinessIndexItem from './business_index_container';
 import BusinessPageNav from '../biz_header/business_nav_container';
 import PageFooter from '../footer/footer';
 

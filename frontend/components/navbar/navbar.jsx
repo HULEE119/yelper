@@ -1,10 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import HomepageBusinessDisplay from './homepage_business_display';
+// import HomepageHeader from './homepage_header_container';
+
 const Navigation = ({ currentUser, logout }) => {
     const sessionLinks = () => (
       <div className="nav-header-homepage">
         <div className="nav-header-homepage-content">
+        {/* <HomepageHeader /> */}
 
           <div className="header-btns">
             <div className="header-btns-left">
@@ -67,18 +71,23 @@ const Navigation = ({ currentUser, logout }) => {
           </div>
 
           <div className="homepage-business-individual-display">
-            <div className="homepage-business-individual-display-1">
-              <div className="homepage-business-individual-display-1-top">1-top</div> 
+            <HomepageBusinessDisplay />
+            {/* <div className="homepage-business-individual-display-1">
+              <div className="homepage-business-individual-display-1-top"></div> 
               <div className="homepage-business-individual-display-1-bottom">1-bottom</div> 
-            </div>
-            <div className="homepage-business-individual-display-2">
-              <div className="homepage-business-individual-display-2-top">2-top</div>
+            </div> */}
+            <HomepageBusinessDisplay />
+
+            {/* <div className="homepage-business-individual-display-2">
+              <div className="homepage-business-individual-display-2-top"></div>
               <div className="homepage-business-individual-display-2-bottom">2-bottom</div>
-            </div>
-            <div className="homepage-business-individual-display-3">
-              <div className="homepage-business-individual-display-3-top">3-top</div>
+            </div> */}
+            <HomepageBusinessDisplay />
+
+            {/* <div className="homepage-business-individual-display-3">
+              <div className="homepage-business-individual-display-3-top"></div>
               <div className="homepage-business-individual-display-3-bottom">3-bottom</div>
-            </div>
+            </div> */}
           </div>
 
         </div>
@@ -88,7 +97,8 @@ const Navigation = ({ currentUser, logout }) => {
     const personalNavigation = () => (
         <div className="nav-header-homepage">
           <div className="nav-header-homepage-content">
-
+            {/* <HomepageHeader /> */}
+            
             <div className="header-btns">
               <div className="header-btns-left">
                 <p className="btn-write-a-review"><Link to="/businesses">Write a Review</Link></p>
@@ -150,18 +160,71 @@ const Navigation = ({ currentUser, logout }) => {
             </div>
 
             <div className="homepage-business-individual-display">
-              <div className="homepage-business-individual-display-1">
-                <div className="homepage-business-individual-display-1-top">1-top</div> 
-                <div className="homepage-business-individual-display-1-bottom">1-bottom</div> 
-              </div>
-              <div className="homepage-business-individual-display-2">
-                <div className="homepage-business-individual-display-2-top">2-top</div>
-                <div className="homepage-business-individual-display-2-bottom">2-bottom</div>
-              </div>
-              <div className="homepage-business-individual-display-3">
-                <div className="homepage-business-individual-display-3-top">3-top</div>
-                <div className="homepage-business-individual-display-3-bottom">3-bottom</div>
-              </div>
+              <HomepageBusinessDisplay />
+              {/* <div className="homepage-business-individual-display-1">
+                <div className="homepage-business-individual-display-1-top"></div> 
+                <div className="homepage-business-individual-display-1-bottom">
+                  <div className="homepage-business-individual-display-1-bottom-bizname">
+                    Patisserie Chanson
+                  </div>
+                  <div className="homepage-business-individual-display-1-bottom-bizrating">
+                    <i className="fas fa-star"/>
+                    <i className="fas fa-star"/>
+                    <i className="fas fa-star"/>
+                    <i className="fas fa-star"/>
+                    <i className="fas fa-star-half-alt"/>
+                  </div>
+                  <div className="homepage-business-individual-display-1-bottom-bizcategory">
+                    Bakeries, Breakfast, Brunch, Sandwiches
+                  </div>
+                  <div className="homepage-business-individual-display-1-bottom-bizaddress">
+                    Downtown Manhattan, New York
+                  </div>
+                  <div className="homepage-business-individual-display-1-bottom-bizhot">
+                    <i className="fab fa-hotjar"/> Opened 7 weeks ago
+                  </div>
+                </div> 
+              </div> */}
+                <HomepageBusinessDisplay />
+              {/* <div className="homepage-business-individual-display-2">
+                <div className="homepage-business-individual-display-2-top"></div>
+                <div className="homepage-business-individual-display-2-bottom">
+                <div>Patisserie Chanson</div>
+                  <div>
+                    <i className="fas fa-star"/>
+                    <i className="fas fa-star"/>
+                    <i className="fas fa-star"/>
+                    <i className="fas fa-star"/>
+                    <i className="fas fa-star-half-alt"/>
+                  </div>
+                  <div>
+                    Bakeries, Breakfast, Brunch, Sandwiches
+                  </div>
+                  <div>
+                    Downtown Manhattan, New York
+                  </div>
+                </div>
+              </div> */}
+                <HomepageBusinessDisplay />
+              {/* <div className="homepage-business-individual-display-3">
+                <div className="homepage-business-individual-display-3-top"></div>
+                <div className="homepage-business-individual-display-3-bottom">
+                <div>Patisserie Chanson</div>
+                  <div>
+                    <i className="fas fa-star"/>
+                    <i className="fas fa-star"/>
+                    <i className="fas fa-star"/>
+                    <i className="fas fa-star"/>
+                    <i className="fas fa-star-half-alt"/>
+                  </div>
+                  <div>
+                    Bakeries, Breakfast, Brunch, Sandwiches
+                  </div>
+                  <div>
+                    Downtown Manhattan, New York
+                  </div>
+                </div>
+              </div> */}
             </div>
 
           </div>

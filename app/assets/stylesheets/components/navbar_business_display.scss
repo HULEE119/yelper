@@ -64,13 +64,64 @@
 
 .homepage-business-individual-display-1-top, .homepage-business-individual-display-2-top, .homepage-business-individual-display-3-top {
     height: 55.25%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 
-    border: 2px solid blueviolet;
 }
 
 .homepage-business-individual-display-1-bottom, .homepage-business-individual-display-2-bottom, .homepage-business-individual-display-3-bottom {
     height: 42.75%;
+    padding: 12px 12px 0 12px;
 
-    border: 2px solid greenyellow;
+}
 
+// individual business display top
+.homepage-business-individual-display-1-top {
+    background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/ZUls2aG-zBLhyiHpZ4HPDQ/o.jpg');
+    background-size: cover;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.homepage-business-individual-display-2-top {
+    background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/ZUls2aG-zBLhyiHpZ4HPDQ/o.jpg');
+    background-size: cover;
+    border-bottom: 1px solid #e6e6e6;
+
+}
+
+.homepage-business-individual-display-3-top {
+
+    background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/ZUls2aG-zBLhyiHpZ4HPDQ/o.jpg');
+    background-size: cover;
+    border-bottom: 1px solid #e6e6e6;
+
+}
+
+// individual business display bottom
+.homepage-business-individual-display-1-bottom-bizname {
+
+    color: #0073bb;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    padding-bottom: 10px;
+}
+
+.homepage-business-individual-display-1-bottom-bizcategory, .homepage-business-individual-display-1-bottom-bizaddress, .homepage-business-individual-display-1-bottom-bizhot {
+
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333333;
+    line-height: 18px;
+    padding-top: 10px;
+}
+
+.homepage-business-individual-display-1-bottom-bizrating {
+    color: #d32323;
+}
+
+.homepage-business-individual-display-1-bottom-bizhot {
+    color: #f15c00;
 }
