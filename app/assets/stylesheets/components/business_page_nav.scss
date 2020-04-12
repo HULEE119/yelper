@@ -37,7 +37,7 @@
     width: 650px;
     height: 50px;
     margin-top: 15px;
-    margin-left: 50px;
+    margin-left: 100px;
 
     position: relative;
 
@@ -137,21 +137,34 @@
 .biz-page-header-user-login-link, .biz-page-header-user-signup-link, .biz-page-header-user-logout-link, .biz-page-header-user-loggedin-link {
     display: flex;
     width: 65px;
-    border: 1px solid #2b273c;
+    // border: 1px solid #2b273c;
     border-radius: 4px;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     // line-height: 22px;
-    padding: 8px 16px 8px 16px;
+    padding: 8px 16px 10px 16px;
     margin-left: 15px;
+    justify-content: center;
+
+    height: 20px;
+
+    background-color: #c00b0b;
+    color: whitesmoke;
+
+    transition: 0.4s;
+
+
 }
 
 .biz-page-header-user-login-link:hover {
     background-color: white;
+    color: #c00b0b;
 }
 
 .biz-page-header-user-signup-link:hover {
     background-color: white;
+    color: #c00b0b;
+
 }
 
 .biz-page-header-user-logout-link {
@@ -162,4 +175,15 @@
 
 .biz-page-header-user-logout-link:hover {
     background-color: white;
+    color: #c00b0b;
+
+}
+
+.biz-page-header-user-loggedin-link {
+    border: 1px solid transparent;
+}
+
+.biz-page-header-user-loggedin-link:hover {
+    border-bottom: 2px solid white;
+    border-radius: 0px;
 }

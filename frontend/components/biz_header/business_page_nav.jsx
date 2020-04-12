@@ -29,7 +29,7 @@ const BusinessPageNav = ({ currentUser, logout }) => {
                 </div>
 
             <div className="biz-page-header-user">
-                <span className="biz-page-header-user-loggedin-link"><i className="far fa-user" />{currentUser.first_name}!</span>
+                <span className="biz-page-header-user-loggedin-link"><i className="far fa-user" /> {currentUser.first_name}!</span>
                 <span className="biz-page-header-user-logout-link" onClick={logout}>Log Out</span>
             </div>
 
