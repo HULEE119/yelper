@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import BusinessIndexItem from './business_index_container';
+import BusinessIndexItem from "./business_index_item";
 import BusinessPageNav from '../biz_header/business_nav_container';
 import PageFooter from '../footer/footer';
 
@@ -32,7 +32,16 @@ class BusinessIndex extends React.Component {
 
                         <div className="business-index-page-subcontainer">
                             <div className="business-index-page-business-list">
-                                {businesses.map((business) => (<BusinessIndexItem business={business} key={business.id} />))}
+                                {
+                                    businesses.map(business => {
+                                        return (
+                                            <BusinessIndexItem
+                                                business={business}
+                                                key={business.id}
+                                            />
+                                        )
+                                    })
+                                }
                             </div>
                             <div className="business-index-page-business-map">
                                 map box

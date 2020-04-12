@@ -87,8 +87,6 @@
 .business-index-page-subcontainer {
     display: flex;
 
-    border: 1px solid red;
-
     width: 960px;
     height: 1000px;
 
@@ -105,8 +103,9 @@
 }
 
 .business-index-page-business-map {
-    width: 300px;
+    width: 400px;
     height: 450px;
+    margin-left: 65px;
     border: 1px solid blue;
 }
 

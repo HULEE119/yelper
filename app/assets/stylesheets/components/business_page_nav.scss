@@ -8,7 +8,13 @@
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #d32323;
 
+}
 
+.biz-page-header-container-box {
+    display: flex;
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 // logo
@@ -138,7 +144,7 @@
 // user login signup 
 .biz-page-header-user {
     display: flex;
-    width: 350px;
+    // width: 350px;
     height: 35px;
     margin-right: 50px;
     cursor: pointer;

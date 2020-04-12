@@ -7,7 +7,6 @@ import BusinessPageNav from './business_page_nav';
 const mapStateToProps = ({ entities, session}) => {
     return (
         {currentUser: entities.users[session.id]}
-
     )  
 };
 
