@@ -11,7 +11,6 @@ Business.destroy_all
 
 
 demo_user = User.create({
-    id: 10019,
     first_name: "Yelper", 
     last_name: "Y.", 
     email: "yelper@yepler.net", 

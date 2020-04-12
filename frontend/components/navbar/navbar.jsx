@@ -52,13 +52,35 @@ const Navigation = ({ currentUser, logout }) => {
         </div>
 
         <div className="homepage-business-display">
-          <div className="homepage-business-individual-display">
-            <div className="homepage-business-individual-display-1">1</div>
-            <div className="homepage-business-individual-display-2">2</div>
-            <div className="homepage-business-individual-display-3">3</div>
 
-            
+        <div className="homepage-business-display-header">
+          <div className="homepage-business-display-topheader">
+              Yelper New York
+            </div>
+            <div className="homepage-business-display-subheader">
+              <div>Queens</div>
+              <div>Manhattan</div>
+              <div>Brooklyn</div>
+              <div>Bronx</div>
+              <div><Link to="/businesses">All Businesses</Link></div>
+            </div>
           </div>
+
+          <div className="homepage-business-individual-display">
+            <div className="homepage-business-individual-display-1">
+              <div className="homepage-business-individual-display-1-top">1-top</div> 
+              <div className="homepage-business-individual-display-1-bottom">1-bottom</div> 
+            </div>
+            <div className="homepage-business-individual-display-2">
+              <div className="homepage-business-individual-display-2-top">2-top</div>
+              <div className="homepage-business-individual-display-2-bottom">2-bottom</div>
+            </div>
+            <div className="homepage-business-individual-display-3">
+              <div className="homepage-business-individual-display-3-top">3-top</div>
+              <div className="homepage-business-individual-display-3-bottom">3-bottom</div>
+            </div>
+          </div>
+
         </div>
       </div>
     );
@@ -122,6 +144,7 @@ const Navigation = ({ currentUser, logout }) => {
                 <div>Queens</div>
                 <div>Manhattan</div>
                 <div>Brooklyn</div>
+                <div>Bronx</div>
                 <div><Link to="/businesses">All Businesses</Link></div>
               </div>
             </div>

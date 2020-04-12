@@ -52,20 +52,24 @@
 .homepage-business-individual-display-1, .homepage-business-individual-display-2, .homepage-business-individual-display-3 {
     width: 300px;
     height: 350px;
-    border: 1px solid black;
     align-items: center;
     justify-content: center;
-    margin-right: 25px;
+    margin-right: 27px;
+
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    background: #fff;
+    // border: 1px solid black;
 }
 
 .homepage-business-individual-display-1-top, .homepage-business-individual-display-2-top, .homepage-business-individual-display-3-top {
-    height: 300px;
+    height: 55.25%;
 
     border: 2px solid blueviolet;
 }
 
 .homepage-business-individual-display-1-bottom, .homepage-business-individual-display-2-bottom, .homepage-business-individual-display-3-bottom {
-    height: 45px;
+    height: 42.75%;
 
     border: 2px solid greenyellow;
 

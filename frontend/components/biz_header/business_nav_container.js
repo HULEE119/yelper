@@ -5,7 +5,6 @@ import { logout } from '../../actions/session_actions';
 import BusinessPageNav from './business_page_nav';
 
 const mapStateToProps = ({ entities, session}) => {
-    debugger
     return (
         {currentUser: entities.users[session.id]}
 
