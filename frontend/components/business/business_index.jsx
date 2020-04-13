@@ -24,7 +24,7 @@ class BusinessIndex extends React.Component {
                         <div className="business-index-page-container-header">
                             <p className="business-index-page-container-header-text">Best Places in New York, NY</p> 
                             <div className="business-index-page-container-subheader">
-                                <p className="business-index-page-container-subheader-1"><i className="fas fa-sliders-h" /> All</p>
+                                <p className="business-index-page-container-subheader-1"><i className="fas fa-sliders-h" /> All Businesses</p>
                                 <p className="business-index-page-container-subheader-2"><i className="fas fa-dollar-sign" /> Price</p>
                                 <p className="business-index-page-container-subheader-3">Open Now</p>
                             </div>
@@ -33,11 +33,12 @@ class BusinessIndex extends React.Component {
                         <div className="business-index-page-subcontainer">
                             <div className="business-index-page-business-list">
                                 {
-                                    businesses.map(business => {
+                                    businesses.map((business, index) => {
                                         return (
                                             <BusinessIndexItem
                                                 business={business}
                                                 key={business.id}
+                                                index={index}
                                             />
                                         )
                                     })

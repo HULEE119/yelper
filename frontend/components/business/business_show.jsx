@@ -33,7 +33,7 @@ class BusinessShow extends React.Component {
                     </div>
                     <div>
                         <label>
-                            <i className="fas fa-utensils"/>Restaurans
+                            <i className="fas fa-utensils"/>Restaurants
                         </label>
                     </div>
                     <div>
