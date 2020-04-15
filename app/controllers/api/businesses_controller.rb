@@ -12,4 +12,13 @@ class Api::BusinessesController < ApplicationController
             render json: ['Business does not exist']
         end
     end 
+
+    def search
+        # if params[:query]
+            @businesses = Business.where('business_name ILIKE ?', "%#{params[:query]}%")
+        # end
+
+        render :index 
+    end
+
 end

@@ -10,10 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_09_200732) do
+ActiveRecord::Schema.define(version: 2020_04_14_162257) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "active_storage_attachments", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "record_type", null: false
+    t.bigint "record_id", null: false
+    t.bigint "blob_id", null: false
+    t.datetime "created_at", null: false
+    t.index ["blob_id"], name: "index_active_storage_attachments_on_blob_id"
+    t.index ["record_type", "record_id", "name", "blob_id"], name: "index_active_storage_attachments_uniqueness", unique: true
+  end
+
+  create_table "active_storage_blobs", force: :cascade do |t|
+    t.string "key", null: false
+    t.string "filename", null: false
+    t.string "content_type"
+    t.text "metadata"
+    t.bigint "byte_size", null: false
+    t.string "checksum", null: false
+    t.datetime "created_at", null: false
+    t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
+  end
 
   create_table "business_categories", force: :cascade do |t|
     t.integer "business_id", null: false
@@ -27,9 +48,13 @@ ActiveRecord::Schema.define(version: 2020_04_09_200732) do
     t.string "state", null: false
     t.integer "zip_code", null: false
     t.string "business_site", null: false
-    t.integer "phone_number", null: false
+    t.bigint "phone_number", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "price_range", null: false
+    t.string "opening_hours", null: false
+    t.float "lat", null: false
+    t.float "lng", null: false
     t.index ["business_name"], name: "index_businesses_on_business_name", unique: true
   end
 
@@ -62,4 +87,5 @@ ActiveRecord::Schema.define(version: 2020_04_09_200732) do
     t.index ["session_token"], name: "index_users_on_session_token", unique: true
   end
 
+  add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
 end

@@ -14,12 +14,33 @@ const BusinessIndexItem = ({ business, index }) => (
                         {index + 1}. {business.business_name}
                     </Link>
                 </li>
-                <li>{business.address}</li>
-                <li>
-                    {business.city}
+                <li className="business-index-item-rating">
+                    <i className="fas fa-star"/>
+                    <i className="fas fa-star"/>
+                    <i className="fas fa-star"/>
+                    <i className="fas fa-star"/>
+                    <i className="fas fa-star"/>
+                </li>
+                <li className="business-index-item-category">
+                    {business.price_range} <i className="fas fa-circle"/>
+                    {business.categories.map((category, index) => {
+                        if (index !== business.categories.length-1 ) {
+                            return (<p key={category.id}><a href="">{category.business_type}, </a></p>)
+                        } else {
+                            return (<p key={category.id}><a href="">{category.business_type} </a></p>)
+                        }
+                    })}
+                </li>
+                <li className="business-index-item-address-1">
+                    {business.address}
+                </li>
+                <li className="business-index-item-address-2">
                     {business.city}
                     {business.state}
                     {business.zip_code}
+                </li>
+                <li>
+                    Start Order
                 </li>
             </ul>
         </div>

@@ -24,3 +24,8 @@ export const fetchBusiness = (businessId) => dispatch => (
     BusinessApiUtil.fetchBusiness(businessId)
         .then( business => dispatch(receiveBusiness(business)))
 );
+
+export const searchBusinesses = (query) => dispatch => (
+    BusinessApiUtil.searchBusinesses(query)
+        .then( businesses => dispatch(receiveAllBusinesses(businesses)))
+);

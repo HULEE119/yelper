@@ -35,3 +35,11 @@ export const createReview = (review) => (
         data: { review }
     })
 );
+
+export const searchBusinesses = ( query ) => (
+    $.ajax({
+        method: 'GET',
+        url: `/api/businesses/search`,
+        data: { query: query }
+    })
+); 

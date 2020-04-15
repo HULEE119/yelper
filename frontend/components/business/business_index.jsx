@@ -4,10 +4,20 @@ import { Link } from 'react-router-dom';
 import BusinessIndexItem from "./business_index_item";
 import BusinessPageNav from '../biz_header/business_nav_container';
 import PageFooter from '../footer/footer';
+import BusinessMap from'../map/business_map';
 
 class BusinessIndex extends React.Component {
     componentDidMount() {
+        // if ( this.props.businesses.length === 0 ) {
+        //     this.props.fetchAllBusinesses();
+        // } 
+
         this.props.fetchAllBusinesses();
+
+    }
+
+    update(price_range) {
+        this.setState({ price_range: price_range });
     }
 
     render () {
@@ -24,9 +34,17 @@ class BusinessIndex extends React.Component {
                         <div className="business-index-page-container-header">
                             <p className="business-index-page-container-header-text">Best Places in New York, NY</p> 
                             <div className="business-index-page-container-subheader">
-                                <p className="business-index-page-container-subheader-1"><i className="fas fa-sliders-h" /> All Businesses</p>
-                                <p className="business-index-page-container-subheader-2"><i className="fas fa-dollar-sign" /> Price</p>
-                                <p className="business-index-page-container-subheader-3">Open Now</p>
+                                <div className="business-index-page-container-subheader-1"><i className="fas fa-sliders-h" /> All Businesses</div>
+                                <div className="business-index-page-container-subheader-2">
+                                    <i className="fas fa-dollar-sign" /> Price Range <i className="fas fa-caret-down"/>
+                                    <ul className="business-index-page-container-subheader-2-dropdown">
+                                        <li onClick={() => this.update("$")}>$</li>
+                                        <li onClick={() => this.update("$$")}>$$</li>
+                                        <li onClick={() => this.update("$$$")}>$$$</li>
+                                        <li onClick={() => this.update("$$$$")}>$$$$</li>
+                                    </ul>
+                                </div>
+                                <div className="business-index-page-container-subheader-3">Open Now</div>
                             </div>
                         </div>
 
@@ -37,7 +55,7 @@ class BusinessIndex extends React.Component {
                                         return (
                                             <BusinessIndexItem
                                                 business={business}
-                                                key={business.id}
+                                                key={index}
                                                 index={index}
                                             />
                                         )
@@ -45,7 +63,8 @@ class BusinessIndex extends React.Component {
                                 }
                             </div>
                             <div className="business-index-page-business-map">
-                                map box
+                                {/* map box */}
+                                <BusinessMap />
                             </div>
                         </div>
                     </div>

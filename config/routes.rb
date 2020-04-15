@@ -8,9 +8,13 @@ Rails.application.routes.draw do
     resource :session, only: [:create, :destroy]
     
     resources :reviews, only: [:index, :create, :update, :destroy]
-
-
-    resources :businesses, only: [:index, :show]
+    
+    
+    resources :businesses, only: [:index, :show] do 
+        collection do 
+          get :search, to: 'businesses#search', as: 'search'
+        end
+    end
         
   end
 

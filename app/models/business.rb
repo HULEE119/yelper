@@ -28,6 +28,8 @@ class Business < ApplicationRecord
         class_name: :Review,
         foreign_key: :business_id
 
+    has_many_attached :photos
+
     def average_rating
         reviews.average(:rating)
     end

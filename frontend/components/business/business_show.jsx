@@ -68,9 +68,18 @@ class BusinessShow extends React.Component {
                                 <i className="fas fa-star"/>
                                 <i className="fas fa-star"/>
                                 <i className="fas fa-star"/>
-                                <i className="fas fa-star-half-alt"/>
+                                <i className="fas fa-star"/>
                             </p>
-                            <p>Bakeries, Breakfast, Brunch, Sandwiches</p>
+                            <p className="biz-show-container-top-bizinfo-category">
+                                <span>{business.price_range} •</span>
+                                {business.categories.map((category, index) => {
+                                    if (index !== business.categories.length-1 ) {
+                                    return (<span key={category.id}>{category.business_type},</span>)
+                                    } else {
+                                        return (<span key={category.id}>{category.business_type} </span>)
+                                    }
+                                })}
+                            </p>
                             <span className="business-show-container-top-writeareview">
                                 <i className="fas fa-star"/> Write a Review
                             </span>

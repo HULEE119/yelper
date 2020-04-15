@@ -62,6 +62,10 @@
     // border: 1px solid black;
 }
 
+.homepage-business-individual-display-1:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .homepage-business-individual-display-1-top, .homepage-business-individual-display-2-top, .homepage-business-individual-display-3-top {
     height: 55.25%;
     border-top-left-radius: 4px;
@@ -118,8 +122,16 @@
     padding-top: 10px;
 }
 
-.homepage-business-individual-display-1-bottom-bizrating {
-    color: #d32323;
+.homepage-business-individual-display-1-bottom-bizrating > i {
+    // color: #d32323;
+    background-color: rgb(211, 35, 35);;
+    padding-right: 2px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border-radius: 2px;
+    text-align: center;
+    color: white;
 }
 
 .homepage-business-individual-display-1-bottom-bizhot {

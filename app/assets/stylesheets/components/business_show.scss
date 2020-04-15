@@ -33,8 +33,39 @@
     color: #333333;
 }
 
-.business-show-container-top-bizinfo-rating {
-    color: #d32323;
+.business-show-container-top-bizinfo-rating > i {
+    // color: #d32323;
+
+    background-color: rgb(211, 35, 35);;
+    padding-right: 2px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border-radius: 2px;
+    text-align: center;
+    color: white;
+}
+
+.biz-show-container-top-bizinfo-category {
+    // padding-top: 10px;
+    // padding-bottom: 10px;
+    // font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    // font-weight: 400;
+    // font-size: 14px;
+    // line-height: 20px;
+    // color: #757280;
+    display: flex;
+}
+
+.biz-show-container-top-bizinfo-category > span {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #757280;
+    padding-left: 4px;
 }
 
 .business-show-container-top-bizinfo p:last-child {
@@ -58,6 +89,8 @@
     line-height: 18px;
     color: #d32323;
     padding: 5px;
+
+    margin-top: -15px;
 
 }
 
@@ -218,8 +251,8 @@
 .business-show-images div {
     display: flex;
     float: left;
-    padding-top: 7%;
-    padding-bottom: 7%;
+    padding-top: 8.5%;
+    padding-bottom: 8.5%;
     width: 24.80%;   
 
     background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/f7il0aA3wEGWXil_qZv0zQ/o.jpg');

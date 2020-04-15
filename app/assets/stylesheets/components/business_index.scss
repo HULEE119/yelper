@@ -11,7 +11,7 @@
     margin-top: 100px;
     margin-bottom: 50px;
     width: 90%;
-    height: 1000px;
+    height: 2100px;
     padding: 10px;
     // display: flex;
     justify-content: center;
@@ -48,14 +48,14 @@
 
 .business-index-page-container-subheader {
     display: flex;
-    width: 450px;
+    width: 500px;
     margin-left: auto;
     margin-right: 70%;
 
 
 }
 
-.business-index-page-container-subheader > p:hover {
+.business-index-page-container-subheader > div:hover {
     background-color: #999;
     color: white;
 }
@@ -81,13 +81,41 @@
 
     transition: 0.4s;
 
-
+    position: relative;
 }
+
+.business-index-page-container-subheader-2:hover > .business-index-page-container-subheader-2-dropdown {
+    display: block;
+}
+
+.business-index-page-container-subheader-2-dropdown {
+    display: none;
+    position: absolute;
+    text-align: right;
+    min-width: 100px;
+    // border: 1px solid #999;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.business-index-page-container-subheader-2-dropdown > li {
+    padding: 5px;
+    color: #2b273c;
+}
+
+.business-index-page-container-subheader-2-dropdown > li:hover {
+    border-bottom: 2px solid #2b273c;
+    // padding-bottom: -4px;
+    background-color: white;
+    // color: white;
+}
+
 
 .business-index-page-subcontainer {
     display: flex;
 
-    width: 960px;
+    width: 1000px;
     height: 1000px;
 
     margin-left: auto;
@@ -98,14 +126,15 @@
 .business-index-page-business-list {
     width: 650px;
     height: 180px;
-    border: 1px solid yellowgrrgb(238, 238, 239);
+    // border: 1px solid yellowgrrgb(238, 238, 239);
 
 }
 
 .business-index-page-business-map {
     width: 400px;
-    height: 450px;
+    height: 600px;
     margin-left: 65px;
-    border: 1px solid blue;
+    border: 1px solid #ccc;
 }
+
 

@@ -39,7 +39,7 @@
     margin-top: 25px;
     margin-bottom: 25px;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+    
     // border: 1px solid rgb(247, 0, 255);
 
 }
@@ -48,4 +48,51 @@
     font-size: 20px;
     font-weight: 700;
     margin-bottom: 12px;
+    color: #2b273c;
+}
+
+.business-index-item-rating > i {
+    // color: #d32323;
+
+    background-color: rgb(211, 35, 35);;
+    padding-right: 3px;
+    padding-left: 2px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border-radius: 2px;
+    text-align: center;
+    color: white;
+}
+
+
+.business-index-item-category {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #757280;
+}
+
+.business-index-item-category > p {
+    padding-left: 5px;
+}
+
+.fa-circle {
+    font-size: 4px;
+    padding-top: 9px;
+    padding-left: 10px;
+}
+
+.business-index-item-address-1, .business-index-item-address-2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #2b273c;
+    font-size: 16px;
+
+}
+
+.business-index-item-address-1 {
+    padding-bottom: 5px;
 }

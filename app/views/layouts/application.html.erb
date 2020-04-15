@@ -5,10 +5,14 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    
     <script src="https://kit.fontawesome.com/40912a79ab.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
-    
+
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{Rails.application.credentials.google[:api_key]}" %>
+
+
     <script type="text/javascript">
       window.signupIllustration = "<%= image_url('signup_illustration.png') %>";
       window.footerCityscape = "<%= image_url('footer_cityscape.png') %>";
