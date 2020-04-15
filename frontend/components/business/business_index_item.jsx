@@ -5,7 +5,15 @@ const BusinessIndexItem = ({ business, index }) => (
 
     <div className="business-index-item-page-container">
         <div className="business-index-item-image-container">
-
+            {business.photos.slice(0, 1).map((photo, index) => {
+                return (
+                    <img 
+                        src={photo} 
+                        key={index}
+                        alt="biz-photo"
+                    />
+                )
+            })}
         </div>
         <div className="business-index-item-details-container">
             <ul>

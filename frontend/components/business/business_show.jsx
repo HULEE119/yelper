@@ -8,6 +8,7 @@ import BusinessMap from '../map/business_map';
 class BusinessShow extends React.Component {
 
     componentDidMount () {
+        window.scrollTo(0, 0);
         this.props.fetchBusiness(this.props.match.params.businessId);
     }
 
@@ -44,10 +45,20 @@ class BusinessShow extends React.Component {
                     </div>
                 </div>
                 <div className="business-show-images">
-                    <div className="business-show-images-1"></div>
+                    {/* <div className="business-show-images-1"></div>
                     <div className="business-show-images-2"></div>
                     <div className="business-show-images-3"></div>
-                    <div className="business-show-images-4"></div>
+                    <div className="business-show-images-4"></div> */}
+
+                    {business.photos.map((photo, index) => {
+                        return (
+                            <img 
+                                src={photo} 
+                                key={index}
+                                alt="biz-photo"
+                            />
+                        )
+                    })}
                 </div>
 
                 <div className="business-show-container">

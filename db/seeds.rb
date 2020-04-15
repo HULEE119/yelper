@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+require 'open-uri'
 
 User.destroy_all
 Business.destroy_all
@@ -166,3 +167,85 @@ bc17 = BusinessCategory.create!({business_id: b7.id, category_id:c11.id})
 bc18 = BusinessCategory.create!({business_id: b8.id, category_id:c4.id})
 bc19 = BusinessCategory.create!({business_id: b8.id, category_id:c7.id})
 bc20 = BusinessCategory.create!({business_id: b8.id, category_id:c1.id})
+
+
+
+ub1 = open("https://yelper-seed.s3.amazonaws.com/ub1.jpg")
+ub2 = open("https://yelper-seed.s3.amazonaws.com/ub2.jpg")
+ub3 = open("https://yelper-seed.s3.amazonaws.com/ub3.jpg")
+ub4 = open("https://yelper-seed.s3.amazonaws.com/ub4.jpg")
+
+b1.photos.attach(io: ub1, filename: "ub1.jpg")
+b1.photos.attach(io: ub2, filename: "ub2.jpg")
+b1.photos.attach(io: ub3, filename: "ub3.jpg")
+b1.photos.attach(io: ub4, filename: "ub4.jpg")
+
+tm1 = open("https://yelper-seed.s3.amazonaws.com/tm1.jpg")
+tm2 = open("https://yelper-seed.s3.amazonaws.com/tm2.jpg")
+tm3 = open("https://yelper-seed.s3.amazonaws.com/tm3.jpg")
+tm4 = open("https://yelper-seed.s3.amazonaws.com/tm4.jpg")
+
+b2.photos.attach(io: tm1, filename: "tm1.jpg")
+b2.photos.attach(io: tm2, filename: "tm2.jpg")
+b2.photos.attach(io: tm3, filename: "tm3.jpg")
+b2.photos.attach(io: tm4, filename: "tm4.jpg")
+
+sdb1 = open("https://yelper-seed.s3.amazonaws.com/sdb1.jpg")
+sdb2 = open("https://yelper-seed.s3.amazonaws.com/sdb2.jpg")
+sdb3 = open("https://yelper-seed.s3.amazonaws.com/sdb3.jpg")
+sdb4 = open("https://yelper-seed.s3.amazonaws.com/sdb4.jpg")
+
+b3.photos.attach(io: sdb1, filename: "sdb1.jpg")
+b3.photos.attach(io: sdb2, filename: "sdb2.jpg")
+b3.photos.attach(io: sdb3, filename: "sdb3.jpg")
+b3.photos.attach(io: sdb4, filename: "sdb4.jpg")
+
+jj1 = open("https://yelper-seed.s3.amazonaws.com/jj1.jpg")
+jj2 = open("https://yelper-seed.s3.amazonaws.com/jj2.jpg")
+jj3 = open("https://yelper-seed.s3.amazonaws.com/jj3.jpg")
+jj4 = open("https://yelper-seed.s3.amazonaws.com/jj4.jpg")
+
+b4.photos.attach(io: jj1, filename: "jj1.jpg")
+b4.photos.attach(io: jj2, filename: "jj2.jpg")
+b4.photos.attach(io: jj3, filename: "jj3.jpg")
+b4.photos.attach(io: jj4, filename: "jj4.jpg")
+
+plsh1 = open("https://yelper-seed.s3.amazonaws.com/plsh1.jpg")
+plsh2 = open("https://yelper-seed.s3.amazonaws.com/plsh2.jpg")
+plsh3 = open("https://yelper-seed.s3.amazonaws.com/plsh3.jpg")
+plsh4 = open("https://yelper-seed.s3.amazonaws.com/plsh4.jpg")
+
+b5.photos.attach(io: plsh1, filename: "plsh1.jpg")
+b5.photos.attach(io: plsh2, filename: "plsh2.jpg")
+b5.photos.attach(io: plsh3, filename: "plsh3.jpg")
+b5.photos.attach(io: plsh4, filename: "plsh4.jpg")
+
+it1 = open("https://yelper-seed.s3.amazonaws.com/it1.jpg")
+it2 = open("https://yelper-seed.s3.amazonaws.com/it2.jpg")
+it3 = open("https://yelper-seed.s3.amazonaws.com/it3.jpg")
+it4 = open("https://yelper-seed.s3.amazonaws.com/it4.jpg")
+
+b6.photos.attach(io: it1, filename: "it1.jpg")
+b6.photos.attach(io: it2, filename: "it2.jpg")
+b6.photos.attach(io: it3, filename: "it3.jpg")
+b6.photos.attach(io: it4, filename: "it4.jpg")
+
+mp1 = open("https://yelper-seed.s3.amazonaws.com/mp1.jpg")
+mp2 = open("https://yelper-seed.s3.amazonaws.com/mp2.jpg")
+mp3 = open("https://yelper-seed.s3.amazonaws.com/mp3.jpg")
+mp4 = open("https://yelper-seed.s3.amazonaws.com/mp4.jpg")
+
+b7.photos.attach(io: mp1, filename: "mp1.jpg")
+b7.photos.attach(io: mp2, filename: "mp2.jpg")
+b7.photos.attach(io: mp3, filename: "mp3.jpg")
+b7.photos.attach(io: mp4, filename: "mp4.jpg")
+
+hnih1 = open("https://yelper-seed.s3.amazonaws.com/hnih1.jpg")
+hnih2 = open("https://yelper-seed.s3.amazonaws.com/hnih2.jpg")
+hnih3 = open("https://yelper-seed.s3.amazonaws.com/hnih3.jpg")
+hnih4 = open("https://yelper-seed.s3.amazonaws.com/hnih4.jpg")
+
+b8.photos.attach(io: hnih1, filename: "hnih1.jpg")
+b8.photos.attach(io: hnih2, filename: "hnih2.jpg")
+b8.photos.attach(io: hnih3, filename: "hnih3.jpg")
+b8.photos.attach(io: hnih4, filename: "hnih4.jpg")

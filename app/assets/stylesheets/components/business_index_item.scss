@@ -1,6 +1,6 @@
 .business-index-item-page-container {
 
-    border: 1px solid darkgoldenrod;
+    // border: 1px solid darkgoldenrod;
 
     display: flex;
     float: left;
@@ -23,15 +23,18 @@
     height: 200px;
     margin: 25px;
 
-    background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/fIg31aMOClJ8sR6ZRxPTTQ/o.jpg');
-    background-size: cover;
-
+    // background-image: url('https://s3-media0.fl.yelpcdn.com/bphoto/fIg31aMOClJ8sR6ZRxPTTQ/o.jpg');
+    // background-size: cover;
 
     border-radius: 4px;
-
-
 }
 
+.business-index-item-image-container > img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+}
 
 // business details
 .business-index-item-details-container {

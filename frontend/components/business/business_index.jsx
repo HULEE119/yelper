@@ -8,12 +8,12 @@ import BusinessMap from'../map/business_map';
 
 class BusinessIndex extends React.Component {
     componentDidMount() {
+        window.scrollTo(0, 0);
         // if ( this.props.businesses.length === 0 ) {
         //     this.props.fetchAllBusinesses();
         // } 
 
         this.props.fetchAllBusinesses();
-
     }
 
     update(price_range) {

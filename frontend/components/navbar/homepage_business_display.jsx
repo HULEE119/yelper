@@ -5,7 +5,17 @@ const HomepageBusinessDisplay = ({ business }) => (
 
 
     <div className="homepage-business-individual-display-1">
-        <div className="homepage-business-individual-display-1-top"></div> 
+        <div className="homepage-business-individual-display-1-top">
+            {business.photos.slice(0, 1).map((photo, index) => {
+                return (
+                    <img 
+                        src={photo} 
+                        key={index}
+                        alt="biz-photo"
+                    />
+                )
+            })}
+        </div> 
         <div className="homepage-business-individual-display-1-bottom">
         <div className="homepage-business-individual-display-1-bottom-bizname">
             {/* Patisserie Chanson */}
