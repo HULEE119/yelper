@@ -96,3 +96,44 @@
 .business-index-item-address-1 {
     padding-bottom: 5px;
 }
+
+.business-index-item-address-3 {
+    display: flex;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    border-color: #eeeeef;
+    width: 425px;
+    height: 40px;
+    padding: 8px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.business-index-item-address-3-1 {
+    color: #2b273c;
+    padding: 9px 18px;
+    background: #fff;
+    border: 1px solid #bbbac0;
+    border-radius: 4px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2b273c;
+    display: flex;
+    width: 87px;
+    transition: 0.6s;
+}
+
+.business-index-item-address-3-1:hover {
+    background-color: #f4f4f4;
+}
+
+.business-index-item-address-3-2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2b273c;
+    padding-left: 125px;
+    padding-top: 13px;
+
+}

@@ -39,8 +39,12 @@ const BusinessIndexItem = ({ business, index }) => (
                     {business.state}
                     {business.zip_code}
                 </li>
+                <li className="business-index-item-address-3">
+                    <span className="business-index-item-address-3-1">Start Order</span> 
+                    <span className="business-index-item-address-3-2">Offers takeout and delivery</span>
+                </li>
                 <li>
-                    Start Order
+                    
                 </li>
             </ul>
         </div>

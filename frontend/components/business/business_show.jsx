@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import BusinessPageNav from '../biz_header/business_nav_container';
 import PageFooter from '../footer/footer';
+import BusinessMap from '../map/business_map';
 
 class BusinessShow extends React.Component {
 
@@ -27,29 +28,19 @@ class BusinessShow extends React.Component {
                 <p>{business.business_name}</p> */}
                 <div className="business-show-container-nav">
                     <div>
-                        <label>
-                            <i className="fas fa-shopping-basket" /><Link to="/businesses">All Businesses</Link>
-                        </label>
+                        <label><i className="fas fa-shopping-basket" /><Link to="/businesses"> All Businesses</Link></label>
                     </div>
                     <div>
-                        <label>
-                            <i className="fas fa-utensils"/>Restaurants
-                        </label>
+                        <label><i className="fas fa-utensils"/> Restaurants</label>
                     </div>
                     <div>
-                        <label>
-                        <i className="fab fa-canadian-maple-leaf"/>Parks
-                        </label>
+                        <label><i className="fab fa-canadian-maple-leaf"/> Parks</label>
                     </div>
                     <div>
-                        <label>
-                        <i className="fab fa-fort-awesome"/>Castles
-                        </label>
+                        <label><i className="fab fa-fort-awesome"/> Castles</label>
                     </div>
                     <div>
-                        <label>
-                        <i className="fas fa-cookie-bite"/>Cookies
-                        </label>
+                        <label><i className="fas fa-cookie-bite"/> Cookies</label>
                     </div>
                 </div>
                 <div className="business-show-images">
@@ -96,25 +87,64 @@ class BusinessShow extends React.Component {
                         <div id="bizcontactinfo"><i className="fas fa-comment-alt"/> Message the Business</div>
                         <div id="bizcontactinfo"><i className="fas fa-share"/> Share the Business</div>
                     </div>
-
+                    <div className="business-show-container-mid-header">
+                        Location {`&`} Hours
+                    </div>
                     <div className="business-show-container-mid">
-                        <div>
-                            Location {`&`} Hours
+                        <div className="business-show-container-mid-map">
+                            <div id="biz-show-map"><BusinessMap /></div>
+                            <div className="business-show-container-mid-address">
+                                <div>
+                                    {business.address}
+                                </div>
+                                <div>
+                                    {business.city}
+                                    {business.state}
+                                    {business.zip_code}
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            {/* reviews */}
+                        <div className="business-show-container-mid-hours">
+                            <div><p id="week">Mon</p><p>{business.opening_hours}</p></div>
+                            <div><p id="week">Tue</p><p>{business.opening_hours}</p></div>
+                            <div><p id="week">Wed</p><p>{business.opening_hours}</p></div>
+                            <div><p id="week">Thu</p><p>{business.opening_hours}</p></div>
+                            <div><p id="week">Fri</p><p>{business.opening_hours}</p></div>
+                            <div><p id="week">Sat</p><p>{business.opening_hours}</p></div>
+                            <div><p id="week">Sun</p><p>{business.opening_hours}</p></div>
+                        </div>
+                    <div>
+
                         </div>
                     </div>
+                    <div className="business-show-container-mid-header">
+                        Recommended Reviews
+                    </div>
+
+                    <div className="business-show-review-demo">
+                        <div id="review-demo"></div>
+                        <div className="business-show-review-demo-details">
+                            <div id="demo-ratings">
+                                <i className="fas fa-star"/>
+                                <i className="fas fa-star"/>
+                                <i className="fas fa-star"/>
+                                <i className="fas fa-star"/>
+                                <i className="fas fa-star"/>
+                            </div> 
+                            <div>Start your review of <span id="demo-bizname">{business.business_name}</span></div>
+                        </div>
+                    </div>
+
                     <div className="business-show-container-bottom">
-                        <div>
-                            {/* reviews */}
+                        <div className="business-show-review-user">
+                            User Info
                         </div>
                         <div className="business-show-container-bottom-right">
                             <div>
-                                {/* business hours */}
+                                Ratings
                             </div>
                             <div>
-                                {/* more business info */}
+                                Reviews
                             </div>
                         </div>
                     </div>
