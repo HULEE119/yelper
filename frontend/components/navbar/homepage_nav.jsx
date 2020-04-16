@@ -39,8 +39,8 @@ class HomepageNav extends React.Component {
                     <div className="header-btns">
                         <div className="header-btns-left">
                             <p className="btn-write-a-review"><Link to="/businesses">Write a Review</Link></p>
-                            <p className="btn-events">LinkedIn</p>
-                            <p className="btn-talk">GitHub</p>
+                            <p className="btn-events"><a href="https://www.linkedin.com/in/mengyuanhu/">LinkedIn</a></p>
+                            <p className="btn-talk"><a href="https://github.com/HULEE119">GitHub</a></p>
                         </div>
             
                         { (currentUser) ? (

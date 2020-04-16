@@ -12,6 +12,7 @@
 
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{Rails.application.credentials.google[:api_key]}" %>
 
+    <%= favicon_link_tag asset_path('favicon.png') %>
 
     <script type="text/javascript">
       window.signupIllustration = "<%= image_url('signup_illustration.png') %>";

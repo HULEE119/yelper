@@ -5,7 +5,8 @@ class Api::UsersController < ApplicationController
           login!(@user)
           render "/api/users/show"
         else
-          render json: @user.errors.full_messages, status: 422
+          # render json: @user.errors.full_messages, status: 422
+          render json: ["Sorry, you are not eligible to sign up for Yelper"], status: 401
         end
     end
     

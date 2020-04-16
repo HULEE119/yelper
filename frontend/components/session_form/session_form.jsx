@@ -79,8 +79,8 @@ class SessionForm extends React.Component {
                         <p className="new-signup-notification">New To Yelper? <span className="new-signup-link"><Link to="/signup">Sign up!</Link></span></p>
                         <p className="legal-copy">By logging in, you will be logged in.</p>
                         <div className="signin-form">
-                            <input type="email" onChange={this.handleUpdate('email')} placeholder="Email" />
-                            <input type="password" onChange={this.handleUpdate('password')} placeholder="Password" />
+                            <input type="email" onChange={this.handleUpdate('email')} placeholder="Email" required />
+                            <input type="password" onChange={this.handleUpdate('password')} placeholder="Password" required />
                             <button className="btn-session-login" onClick={this.handleSubmit}>{this.props.formType}</button>
                             <button className="btn-session-demouser" onClick={this.demoLogin}>Demo Account</button>
                         </div>
@@ -118,12 +118,12 @@ class SessionForm extends React.Component {
                         <form>
                             <div className="signup-box">
                                 <div className="signup-fullname-box">
-                                    <input className="signup-first-name" type="text" onChange={this.handleUpdate('first_name')} placeholder="First Name"/>
-                                    <input className="signup-last-name" type="text" onChange={this.handleUpdate('last_name')} placeholder="Last Name"/>
+                                    <input className="signup-first-name" type="text" onChange={this.handleUpdate('first_name')} placeholder="First Name" required/>
+                                    <input className="signup-last-name" type="text" onChange={this.handleUpdate('last_name')} placeholder="Last Name" required/>
                                 </div>
-                                <input type="email" onChange={this.handleUpdate('email')} placeholder="Email" />
-                                <input type="password" onChange={this.handleUpdate('password')} placeholder="Password" />
-                                <input type="text" onChange={this.handleUpdate('zip_code')} placeholder="ZIP Code" />
+                                <input type="email" onChange={this.handleUpdate('email')} placeholder="Email" required />
+                                <input type="password" onChange={this.handleUpdate('password')} placeholder="Password" required />
+                                <input type="text" onChange={this.handleUpdate('zip_code')} placeholder="ZIP Code" required />
                                 <p className="signup-birthday-subheader">Birthday</p>
                             </div>
 
