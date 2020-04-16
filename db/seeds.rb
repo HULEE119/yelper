@@ -11,12 +11,17 @@ User.destroy_all
 Business.destroy_all
 Category.destroy_all
 BusinessCategory.destroy_all
+Review.destroy_all
 
 
 u1 = User.create!({first_name: "Yelper", last_name: "Y.", email: "yelper@yepler.net", password: "password", zip_code: "10019" })
-u2 = User.create!({first_name: "Sarah", last_name: "Lee", email: "sl1990@yepler.net", password: "password", zip_code: "11365" })
-u3 = User.create!({first_name: "Donald", last_name: "Yen", email: "dy1990@yepler.net", password: "password", zip_code: "10286" })
-u4 = User.create!({first_name: "Raingarda", last_name: "Pérez", email: "rp1990@yepler.net", password: "password", zip_code: "11001" })
+u2 = User.create!({first_name: "Rachael", last_name: "Ray", email: "rr1990@yepler.net", password: "password", zip_code: "11365" })
+u3 = User.create!({first_name: "Bobby", last_name: "Flay", email: "bf1990@yepler.net", password: "password", zip_code: "10286" })
+u4 = User.create!({first_name: "Emeril", last_name: "Lagasse", email: "el1990@yepler.net", password: "password", zip_code: "11001" })
+u5 = User.create!({first_name: "Tom", last_name: "Colicchio", email: "tc1990@yepler.net", password: "password", zip_code: "11021" })
+u6 = User.create!({first_name: "Padma", last_name: "Lakshmi", email: "pl1990@yepler.net", password: "password", zip_code: "11001" })
+u7 = User.create!({first_name: "Gordon", last_name: "Ramsay", email: "gr1990@yepler.net", password: "password", zip_code: "11001" })
+u8 = User.create!({first_name: "Wolfgang", last_name: "Puck", email: "wp1990@yepler.net", password: "password", zip_code: "11001" })
 
 c1 = Category.create!({business_type: "Asian Fusion"})
 c2 = Category.create!({business_type: "Chinese"})
@@ -32,7 +37,6 @@ c11 = Category.create!({business_type: "Noodles"})
 c12 = Category.create!({business_type: "Bakeries"})
 c13 = Category.create!({business_type: "Bagels"})
 c14 = Category.create!({business_type: "Steakhouses"})
-
 
 
 b1 = Business.create!({
@@ -249,3 +253,59 @@ b8.photos.attach(io: hnih1, filename: "hnih1.jpg")
 b8.photos.attach(io: hnih2, filename: "hnih2.jpg")
 b8.photos.attach(io: hnih3, filename: "hnih3.jpg")
 b8.photos.attach(io: hnih4, filename: "hnih4.jpg")
+
+r1 = Review.create!({
+    rating: 5,
+    body: "I was on the lookout for a bagel place that served a decent lox bagel and lo and behold, I found this place! It was very crowded on the day I went but thankfully, the line moved relatively quickly. It can get a bit confusing as to which line to go to because of the way they're directing people so make sure to pay attention! Also, be prepared to know what you want to order.",
+    author_id: u1.id,
+    business_id: b1.id
+})
+
+r2 = Review.create!({
+    rating: 5,
+    body: "Great place for Thai food if you're up on the UWS by 100th street.  They line can be long especially on a Friday night. The bad thing is they seem to only put you on the waiting list if your whole party is there.",
+    author_id: u2.id,
+    business_id: b2.id
+})
+
+r3 = Review.create!({
+    rating: 5,
+    body: "Spot is a NYC specialty, and ended up being one of my first stops in the city. The space is small, but the all white walls and seating scheme gave the space a minimalist, hip vibe. The desserts are very cute too!",
+    author_id: u3.id,
+    business_id: b3.id
+})
+
+r4 = Review.create!({
+    rating: 5,
+    body: "This place is a new take on Vietnamese sandwiches.  My preference is to not stray away from tradition, therefore i didn't enjoy the pork belly sandwich as much as someone else might.  If I had to compare the traditional roast pork sandwich to other places in Chinatown NY I would say this place doesn't stack up  as well.  Not to say the sandwich was bad. Just slightly different but still tasty!",
+    author_id: u4.id,
+    business_id: b4.id
+})
+
+r5 = Review.create!({
+    rating: 5,
+    body: "My favorite steak house. Friendly service, great steak what more to say? Expect to pay $100 per person, which is what u pay at most steak houses. for it's name sake, it well worth it. My favorite side dish is cream of spinach.",
+    author_id: u5.id,
+    business_id: b5.id
+})
+
+r6 = Review.create!({
+    rating: 5,
+    body: "I have read about Izakaya Toribar when it first opened here in midtown and immediately added to my bucket list. Finally, last night I had a chance to check it out and let me tell you; I'm glad I did!",
+    author_id: u6.id,
+    business_id: b6.id
+})
+
+r7 = Review.create!({
+    rating: 5,
+    body: "I eat at the first ave Mala project frequently and wanted to try their other location. I came for a late lunch on a Tuesday and there was no wait. They have a lunch menu that offers six or so combos of four ingredients, each based around a different protein choice for around $13 each.",
+    author_id: u7.id,
+    business_id: b7.id
+})
+
+r8 = Review.create!({
+    rating: 5,
+    body: "We were looking for a new restaurant to try & ordered take out from here last night. We ordered the dumplings, rice cakes, bibimbap, & fried chicken - all were excellent. The bibimbap came with all accompaniments and fried chicken was still crispy. Delivery was also quick, about 35 minutes.",
+    author_id: u8.id,
+    business_id: b8.id
+})

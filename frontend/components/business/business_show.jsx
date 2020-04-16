@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import BusinessPageNav from '../biz_header/business_nav_container';
 import PageFooter from '../footer/footer';
 import BusinessMap from '../map/business_map';
+import ReviewIndex from "../review/review_index";
+
 
 class BusinessShow extends React.Component {
 
@@ -148,14 +150,25 @@ class BusinessShow extends React.Component {
 
                     <div className="business-show-container-bottom">
                         <div className="business-show-review-user">
-                            User Info
+                            {/* User Info */}
+                            {/* {business.reviews.map((review, index) => {
+                                return (
+                                    <span>{review.body}</span>
+                                )
+                            })} */}
+                            {/* <ReviewIndex 
+                                business={business}
+                                // reviews={reviews}
+                                // reviewers={users}
+                                currentUser={currentUser}
+                            /> */}
                         </div>
                         <div className="business-show-container-bottom-right">
                             <div>
-                                Ratings
+                                {/* Ratings */}
                             </div>
                             <div>
-                                Reviews
+                                {/* Reviews */}
                             </div>
                         </div>
                     </div>
