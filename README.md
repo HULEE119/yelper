@@ -18,9 +18,11 @@ Please feel free to explore more on the live site here -> [Live Site](https://ye
 ## Features 
 #### User Authentication with Error Handling
 
-Yelper has a signin/signup user authentication system which allows users to create their account and have access to the features only available to logged in users. On submit, when any of the input fields are invalid, the user will be prompted with pop up error messages that describe what the problem is. 
+Yelper has a signin/signup user authentication system which allows users to create their account and have access to the features only available to logged in users. 
 
 ![user authentication](https://yelper-seed.s3.amazonaws.com/signup_authentication.png)
+
+On submit, when any of the input fields are invalid, the user will be prompted with pop up error messages that describe what the problem is. 
 
 #### Platform to Showcase Local Businesses 
 
@@ -28,7 +30,7 @@ Yelper has a signin/signup user authentication system which allows users to crea
 
 #### Business Page
 
-Business page on Yelper creates the platform to showcase unique information about the business.
+Business page on Yelper creates unique interface displays information about the business.
 
 ![business display](https://yelper-seed.s3.amazonaws.com/business_display.png)
 
