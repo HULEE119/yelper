@@ -118,12 +118,12 @@ class SessionForm extends React.Component {
                         <form>
                             <div className="signup-box">
                                 <div className="signup-fullname-box">
-                                    <input className="signup-first-name" type="text" onChange={this.handleUpdate('first_name')} placeholder="First Name" required/>
-                                    <input className="signup-last-name" type="text" onChange={this.handleUpdate('last_name')} placeholder="Last Name" required/>
+                                    <input className="signup-first-name" type="text" required onChange={this.handleUpdate('first_name')} placeholder="First Name" />
+                                    <input className="signup-last-name" type="text" required onChange={this.handleUpdate('last_name')} placeholder="Last Name" />
                                 </div>
-                                <input type="email" onChange={this.handleUpdate('email')} placeholder="Email" required />
-                                <input type="password" onChange={this.handleUpdate('password')} placeholder="Password" required />
-                                <input type="text" onChange={this.handleUpdate('zip_code')} placeholder="ZIP Code" required />
+                                <input type="email" required onChange={this.handleUpdate('email')} placeholder="Email"  />
+                                <input type="password" required onChange={this.handleUpdate('password')} placeholder="Password"  />
+                                <input type="text" required onChange={this.handleUpdate('zip_code')} placeholder="ZIP Code"  />
                                 <p className="signup-birthday-subheader">Birthday</p>
                             </div>
 
