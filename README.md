@@ -20,7 +20,7 @@ Please feel free to explore more on the live site here -> [Live Site](https://ye
 
 Yelper has a signin/signup user authentication system which allows users to create their account and have access to the features only available to logged in users. On submit, when any of the input fields are invalid, the user will be prompted with pop up error messages that describe what the problem is. 
 
-![user authentication](https://yelper-seed.s3.amazonaws.com/user_authentication.png)
+![user authentication](https://yelper-seed.s3.amazonaws.com/signup_authentication.png)
 
 
 #### Business Page
