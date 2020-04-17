@@ -22,6 +22,9 @@ Yelper has a signin/signup user authentication system which allows users to crea
 
 ![user authentication](https://yelper-seed.s3.amazonaws.com/signup_authentication.png)
 
+#### Platform to Showcase Local Businesses 
+
+![businesses list](https://yelper-seed.s3.amazonaws.com/businesses_list.png)
 
 #### Business Page
 
