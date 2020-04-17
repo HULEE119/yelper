@@ -26,8 +26,6 @@ Business page on Yelper creates the platform to showcase unique information abou
 
 ## Possible Future Design Features
 
-Reviewing System (real time review)
-
-Saving System (save business under user account)
-
-Search Feature (find businesses based on broader range)
+* Reviewing System (real time review)
+* Saving System (save business under user account)
+* Search Feature (find businesses based on broader range)
