@@ -5,6 +5,12 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <meta property='og:title' content='Yelper' />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content='https://yelperapp.herokuapp.com/#/' />
+    <meta property='og:image' content="<%= image_url('business_display.png') %>" />
+    <meta property='og:description' content='Yelper is a fullstack Yelp clone made with React, Redux, and Ruby on Rails.' />
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
