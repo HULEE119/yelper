@@ -94,7 +94,7 @@ class BusinessShow extends React.Component {
                         <p>Due to ongoing precautionary measures, please contact the business directly for updated hours and availability.</p>
                     </div>
                     <div className="business-show-container-top-bizcontactinfo">
-                        <div id="bizcontactinfo"><i className="fas fa-sign-out-alt"/><a href={`${business.business_site}`} target="_blank"> {business.business_site} </a></div>
+                        <div id="bizcontactinfo"><i className="fas fa-sign-out-alt"/><a href={`${business.business_site}`} target="_blank"> {business.business_site.slice(7)} </a></div>
                         <div id="bizcontactinfo"><i className="fas fa-phone-alt"/>{business.phone_number}</div>
                         <div id="bizcontactinfo"><i className="fas fa-utensils"/> Full Menu</div>
                         <div id="bizcontactinfo"><i className="fas fa-comment-alt"/> Message the Business</div>

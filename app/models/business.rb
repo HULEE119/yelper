@@ -33,4 +33,12 @@ class Business < ApplicationRecord
     def average_rating
         reviews.average(:rating)
     end
+
+    # def self.search(query)
+    #     if query 
+    #         where("(lower(categories.category) LIKE :query OR lower(businesses.name) LIKE :query)", query: "%#{query.downcase}%")
+    #     else 
+    #         @businesses = Business.all 
+    #     end   
+    # end
 end

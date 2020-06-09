@@ -18,8 +18,8 @@ class HomepageNav extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.searchBusinesses(this.state.query)
-            .then( () => this.props.history.push("/businesses") )
+        // this.props.searchBusinesses(this.state.query)
+        this.props.history.push(`/search/${this.state.query}`);
     }
 
     update(field) {
@@ -39,8 +39,8 @@ class HomepageNav extends React.Component {
                     <div className="header-btns">
                         <div className="header-btns-left">
                             <p className="btn-write-a-review"><Link to="/businesses">Write a Review</Link></p>
-                            <p className="btn-events"><a href="https://www.linkedin.com/in/mengyuanhu/">LinkedIn</a></p>
-                            <p className="btn-talk"><a href="https://github.com/HULEE119">GitHub</a></p>
+                            <p className="btn-events"><a href="https://www.linkedin.com/in/mengyuanhu/" target="_blank">LinkedIn</a></p>
+                            <p className="btn-talk"><a href="https://github.com/HULEE119" target="_blank">GitHub</a></p>
                         </div>
             
                         { (currentUser) ? (
@@ -64,7 +64,6 @@ class HomepageNav extends React.Component {
             
                         <form className="header-search-box">
                             <label className="search-bar-find">Find
-                                {/* <input type="text" value={this.state} placeholder="parks, takeout..." /> */}
                                 <input type="text" 
                                     onChange={this.update('query')}
                                     value={this.state.query} 
@@ -83,7 +82,6 @@ class HomepageNav extends React.Component {
                             <label className="search-bar-search" 
                                 onClick={this.handleSubmit} >
                                 <i className="fas fa-search"/>
-                                {/* <Link to="/businesses"><i className="fas fa-search"/></Link> */}
                             </label>
                         </form>
             

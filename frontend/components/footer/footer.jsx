@@ -6,9 +6,9 @@ const PageFooter = () => (
         <div className="footer-container">
             <div className="footer-nav-bar">
                 <div className="footer-nav-title">
-                    <p id="footer-nav-title-github"><a href="https://github.com/HULEE119"><i className="fab fa-github"/></a></p>
-                    <p id="footer-nav-title-linkedin"><a href="https://www.linkedin.com/in/mengyuanhu/"><i className="fab fa-linkedin"/></a></p>
-                    <p id="footer-nav-title-angellist"><a href="https://angel.co/u/mengyuan-christina-hu"><i className="fab fa-angellist"/></a></p>
+                    <p id="footer-nav-title-github"><a href="https://github.com/HULEE119" target="_blank"><i className="fab fa-github"/></a></p>
+                    <p id="footer-nav-title-linkedin"><a href="https://www.linkedin.com/in/mengyuanhu/" target="_blank"><i className="fab fa-linkedin"/></a></p>
+                    <p id="footer-nav-title-angellist"><a href="https://angel.co/u/christina-hu-lee" target="_blank"><i className="fab fa-angellist"/></a></p>
                 </div>
             </div>
             <div className="footer-img">

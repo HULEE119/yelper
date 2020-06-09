@@ -9,11 +9,18 @@ import BusinessMap from'../map/business_map';
 class BusinessIndex extends React.Component {
     componentDidMount() {
         window.scrollTo(0, 0);
-        // if ( this.props.businesses.length === 0 ) {
-        //     this.props.fetchAllBusinesses();
-        // } 
+        
+        if (this.props.match.params.query) {
+            this.props.searchBusinesses(this.props.match.params.query);
+        } else {
+            this.props.fetchAllBusinesses();
+        }
+    }
 
-        this.props.fetchAllBusinesses();
+    componentDidUpdate(prevProps) {
+        if (this.props.match.params.query !== prevProps.match.params.query) {
+            this.props.searchBusinesses(this.props.match.params.query);
+        } 
     }
 
     update(price_range) {
@@ -34,7 +41,9 @@ class BusinessIndex extends React.Component {
                         <div className="business-index-page-container-header">
                             <p className="business-index-page-container-header-text">Best Places in New York, NY</p> 
                             <div className="business-index-page-container-subheader">
-                                <div className="business-index-page-container-subheader-1"><i className="fas fa-sliders-h" /> All Businesses</div>
+                                <div className="business-index-page-container-subheader-1">
+                                    <i className="fas fa-sliders-h" /> <a href="/#/businesses">All Businesses</a>
+                                </div>
                                 <div className="business-index-page-container-subheader-2">
                                     <i className="fas fa-dollar-sign" /> Price Range <i className="fas fa-caret-down"/>
                                     <ul className="business-index-page-container-subheader-2-dropdown">
