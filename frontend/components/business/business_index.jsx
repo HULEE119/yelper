@@ -9,7 +9,7 @@ import BusinessMap from'../map/business_map';
 class BusinessIndex extends React.Component {
     componentDidMount() {
         window.scrollTo(0, 0);
-        
+
         if (this.props.match.params.query) {
             this.props.searchBusinesses(this.props.match.params.query);
         } else {
@@ -55,6 +55,14 @@ class BusinessIndex extends React.Component {
                                 </div>
                                 <div className="business-index-page-container-subheader-3">Open Now</div>
                             </div>
+                        </div>
+
+                        <div className="search-result-notification">
+                            { (businesses.length !== 0) ? ( 
+                                (businesses.length !== 8) ? (`Search result for "${this.props.match.params.query}". Try click on "All Businesses" to explore more!`) : (``)
+                            ) : (
+                                `No result found for "${this.props.match.params.query}". Try click on "All Businesses" to explore!`
+                            )}
                         </div>
 
                         <div className="business-index-page-subcontainer">

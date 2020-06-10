@@ -16,7 +16,6 @@ class Api::BusinessesController < ApplicationController
     def search
         if params[:query]
             @businesses = Business.where('business_name ILIKE ?', "%#{params[:query]}%" )
-            # @businesses = Business.search(params[:query])
         end
 
 

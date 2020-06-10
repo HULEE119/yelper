@@ -9,9 +9,13 @@
 #  state         :string           not null
 #  zip_code      :integer          not null
 #  business_site :string           not null
-#  phone_number  :integer          not null
+#  phone_number  :bigint           not null
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
+#  price_range   :string           not null
+#  opening_hours :string           not null
+#  lat           :float            not null
+#  lng           :float            not null
 #
 class Business < ApplicationRecord
     validates :business_name, :address, :city, :state, :zip_code, :business_site, :phone_number, presence: true

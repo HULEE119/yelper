@@ -67,7 +67,7 @@ class HomepageNav extends React.Component {
                                 <input type="text" 
                                     onChange={this.update('query')}
                                     value={this.state.query} 
-                                    placeholder="parks, takeout..." 
+                                    placeholder="bagel, thai..." 
                                 />
                             </label>
                 
