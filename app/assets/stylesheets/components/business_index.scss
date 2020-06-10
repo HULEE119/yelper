@@ -93,7 +93,6 @@
     position: absolute;
     text-align: right;
     min-width: 100px;
-    // border: 1px solid #999;
     background-color: white;
     margin-top: 10px;
     margin-left: 10px;
@@ -106,28 +105,21 @@
 
 .business-index-page-container-subheader-2-dropdown > li:hover {
     border-bottom: 2px solid #2b273c;
-    // padding-bottom: -4px;
     background-color: white;
-    // color: white;
 }
 
 
 .business-index-page-subcontainer {
     display: flex;
-
     width: 1000px;
-    height: 1000px;
-
+    height: 2230px;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .business-index-page-business-list {
     width: 650px;
     height: 180px;
-    // border: 1px solid yellowgrrgb(238, 238, 239);
-
 }
 
 .business-index-page-business-map {
@@ -135,6 +127,8 @@
     height: 600px;
     margin-left: 65px;
     border: 1px solid #ccc;
+    position: sticky;
+    top: 10px;
 }
 
 
@@ -142,5 +136,7 @@
     margin-bottom: 20px;
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: rgb(43, 39, 60);
-
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }

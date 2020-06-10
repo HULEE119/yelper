@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import PageFooter from '../footer/footer';
+
 
 class SessionForm extends React.Component {
     constructor(props) {
@@ -79,8 +81,8 @@ class SessionForm extends React.Component {
                         <p className="new-signup-notification">New To Yelper? <span className="new-signup-link"><Link to="/signup">Sign up!</Link></span></p>
                         <p className="legal-copy">By logging in, you will be logged in.</p>
                         <div className="signin-form">
-                            <input type="email" onChange={this.handleUpdate('email')} placeholder="Email" required />
-                            <input type="password" onChange={this.handleUpdate('password')} placeholder="Password" required />
+                            <input type="email" onChange={this.handleUpdate('email')} placeholder="Email" required="required" />
+                            <input type="password" onChange={this.handleUpdate('password')} placeholder="Password" required="required" />
                             <button className="btn-session-login" onClick={this.handleSubmit}>{this.props.formType}</button>
                             <button className="btn-session-demouser" onClick={this.demoLogin}>Demo Account</button>
                         </div>
@@ -93,6 +95,7 @@ class SessionForm extends React.Component {
 
                 </div>
 
+                <PageFooter />
             </div>
         );
 
@@ -173,6 +176,8 @@ class SessionForm extends React.Component {
                             <img src={window.signupIllustration} className="session-form-image-content" alt="signup-illustration"/>
                         </div>
                 </div>
+
+                <PageFooter />
             </div>
         )
 
