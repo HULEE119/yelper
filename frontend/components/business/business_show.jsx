@@ -34,16 +34,16 @@ class BusinessShow extends React.Component {
                         <label><i className="fas fa-shopping-basket" /><Link to="/businesses"> All Businesses</Link></label>
                     </div>
                     <div>
-                        <label><i className="fas fa-utensils"/> Restaurants</label>
+                        <label><i class="fas fa-home"></i><a href="https://hulee119.github.io/" target="_blank">Portfolio</a></label>
                     </div>
                     <div>
-                        <label><i className="fab fa-canadian-maple-leaf"/> Parks</label>
+                        <label><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/mengyuanhu/" target="_blank">LinkedIn</a></label>
                     </div>
                     <div>
-                        <label><i className="fab fa-fort-awesome"/> Castles</label>
+                        <label><i class="fab fa-github"></i><a href="https://github.com/HULEE119" target="_blank">GitHub</a></label>
                     </div>
                     <div>
-                        <label><i className="fas fa-cookie-bite"/> Cookies</label>
+                        <label><i class="fab fa-angellist"></i><a href="https://angel.co/u/christina-hu-lee" target="_blank">AngelList</a></label>
                     </div>
                 </div>
                 <div className="business-show-images">
@@ -94,8 +94,8 @@ class BusinessShow extends React.Component {
                         <p>Due to ongoing precautionary measures, please contact the business directly for updated hours and availability.</p>
                     </div>
                     <div className="business-show-container-top-bizcontactinfo">
-                        <div id="bizcontactinfo"><i className="fas fa-sign-out-alt"/><a href={`${business.business_site}`} target="_blank"> {business.business_site} </a></div>
-                        <div id="bizcontactinfo"><i className="fas fa-phone-alt"/>{business.phone_number}</div>
+                        <div id="bizcontactinfo"><i className="fas fa-sign-out-alt"/>{business.business_site}</div>
+                        <div id="bizcontactinfo"><i className="fas fa-phone" />{business.phone_number}</div>
                         <div id="bizcontactinfo"><i className="fas fa-utensils"/> Full Menu</div>
                         <div id="bizcontactinfo"><i className="fas fa-comment-alt"/> Message the Business</div>
                         <div id="bizcontactinfo"><i className="fas fa-share"/> Share the Business</div>

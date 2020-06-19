@@ -40,7 +40,7 @@ class HomepageNav extends React.Component {
 
                     <div className="header-btns">
                         <div className="header-btns-left">
-                            <p className="btn-write-a-review"><Link to="/businesses">Write a Review</Link></p>
+                            <p className="btn-write-a-review"><Link to="/businesses">View All Businesses</Link></p>
                             <p className="btn-events"><a href="https://www.linkedin.com/in/mengyuanhu/" target="_blank">LinkedIn</a></p>
                             <p className="btn-talk"><a href="https://github.com/HULEE119" target="_blank">GitHub</a></p>
                         </div>
@@ -81,10 +81,10 @@ class HomepageNav extends React.Component {
             
                         <div className="header-nav">
                             <ul className="header-links">
-                                <li className="header-accountants"><i className="fas fa-calculator"></i><a href="/">Accountants</a></li>
-                                <li className="header-restaurants"><i className="fas fa-utensils"></i><a href="/">Restaurants</a></li>
-                                <li className="header-home-services"><i className="fas fa-home"></i><a href="/">Home Services</a></li>
-                                <li className="header-delivery"><i className="fas fa-bicycle"></i><a href="/">Delivery</a></li>
+                                <li className="header-accountants"><i class="fas fa-home"></i><a href="https://hulee119.github.io/" target="_blank">Portfolio</a></li>
+                                <li className="header-home-services"><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/mengyuanhu/" target="_blank">LinkedIn</a></li>
+                                <li className="header-restaurants"><i class="fab fa-github"></i><a href="https://github.com/HULEE119" target="_blank">GitHub</a></li>
+                                <li className="header-delivery"><i class="fab fa-angellist"></i><a href="https://angel.co/u/christina-hu-lee" target="_blank">AngelList</a></li>
                             </ul>
                         </div>
                     </div>
