@@ -6,7 +6,7 @@ import HomepageBusinessDisplay from './homepage_business_display';
 class HomepageNav extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { query: "", location: "" }
+        this.state = { query: "" }
 
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -18,8 +18,11 @@ class HomepageNav extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        // this.props.searchBusinesses(this.state.query)
-        this.props.history.push(`/search/${this.state.query}`);
+        if ( this.state.query ) {
+            this.props.history.push(`/search/${this.state.query}`);
+        } else {
+            this.props.history.push(`/businesses`);
+        }
     }
 
     update(field) {
@@ -34,8 +37,7 @@ class HomepageNav extends React.Component {
         return (
             <div className="nav-header-homepage">
                 <div className="nav-header-homepage-content">
-                    {/* <HomepageHeader /> */}
-            
+
                     <div className="header-btns">
                         <div className="header-btns-left">
                             <p className="btn-write-a-review"><Link to="/businesses">Write a Review</Link></p>
@@ -71,13 +73,15 @@ class HomepageNav extends React.Component {
                                 />
                             </label>
                 
-                            <label className="search-bar-near">Near
-                                <input type="text" 
-                                    onChange={this.update('location')}
-                                    value={this.state.location} 
-                                    placeholder="Manhattan, NY" 
-                                />
-                            </label>
+                        { 
+                        // <label className="search-bar-near">Near
+                        //     <input type="text" 
+                        //         onChange={this.update('location')}
+                        //         value={this.state.location} 
+                        //         placeholder="Manhattan, NY" 
+                        //     />
+                        // </label> 
+                         }
                 
                             <label className="search-bar-search" 
                                 onClick={this.handleSubmit} >
