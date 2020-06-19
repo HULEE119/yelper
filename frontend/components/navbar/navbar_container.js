@@ -6,7 +6,7 @@ import { searchBusinesses, fetchAllBusinesses } from '../../actions/business_act
 
 import HomepageNav from './homepage_nav';
 
-const mapStateToProps = ({ entities, session}) => ({
+const mapStateToProps = ({ entities, session }) => ({
     currentUser: entities.users[session.id],
     businesses: Object.values(entities.businesses),
 });
@@ -14,8 +14,7 @@ const mapStateToProps = ({ entities, session}) => ({
 const mapDispatchToProps = (dispatch) => ({
     logout: () => dispatch(logout()),
     searchBusinesses: (query) => dispatch(searchBusinesses(query)),
-    fetchAllBusinesses: () => dispatch(fetchAllBusinesses()),
-
+    fetchAllBusinesses: () => dispatch(fetchAllBusinesses())
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(HomepageNav);

@@ -73,16 +73,6 @@ class HomepageNav extends React.Component {
                                 />
                             </label>
                 
-                        { 
-                        // <label className="search-bar-near">Near
-                        //     <input type="text" 
-                        //         onChange={this.update('location')}
-                        //         value={this.state.location} 
-                        //         placeholder="Manhattan, NY" 
-                        //     />
-                        // </label> 
-                         }
-                
                             <label className="search-bar-search" 
                                 onClick={this.handleSubmit} >
                                 <i className="fas fa-search"/>
