@@ -81,10 +81,10 @@ class HomepageNav extends React.Component {
             
                         <div className="header-nav">
                             <ul className="header-links">
-                                <li className="header-accountants"><i class="fas fa-home"></i><a href="https://hulee119.github.io/" target="_blank">Portfolio</a></li>
-                                <li className="header-home-services"><i class="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/mengyuanhu/" target="_blank">LinkedIn</a></li>
-                                <li className="header-restaurants"><i class="fab fa-github"></i><a href="https://github.com/HULEE119" target="_blank">GitHub</a></li>
-                                <li className="header-delivery"><i class="fab fa-angellist"></i><a href="https://angel.co/u/christina-hu-lee" target="_blank">AngelList</a></li>
+                                <li className="header-accountants"><i className="fas fa-home"></i><a href="https://hulee119.github.io/" target="_blank">Portfolio</a></li>
+                                <li className="header-home-services"><i className="fab fa-linkedin-in"></i><a href="https://www.linkedin.com/in/mengyuanhu/" target="_blank">LinkedIn</a></li>
+                                <li className="header-restaurants"><i className="fab fa-github"></i><a href="https://github.com/HULEE119" target="_blank">GitHub</a></li>
+                                <li className="header-delivery"><i className="fab fa-angellist"></i><a href="https://angel.co/u/christina-hu-lee" target="_blank">AngelList</a></li>
                             </ul>
                         </div>
                     </div>

@@ -16,12 +16,13 @@ class Api::BusinessesController < ApplicationController
     def search
         if params[:query]
             @businesses = Business.where('business_name ILIKE ?', "%#{params[:query]}%" )
-        # else params[:location]
-        #     @businesses = Business.where('city ILIKE ?', "%#{params[:location]}%" )
         end
 
-
         render :index 
+    end
+
+    def filters
+        params[:filters][:bounds]
     end
 
 end

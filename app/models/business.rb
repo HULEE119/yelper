@@ -38,6 +38,14 @@ class Business < ApplicationRecord
         reviews.average(:rating)
     end
 
+    def self.in_bounds(bounds)
+        self.where("lat < ?", bounds[:northEast][:lat])
+            .where("lat > ?", bounds[:southWest][:lat])
+            .where("lng > ?", bounds[:southWest][:lng])
+            .where("lng < ?", bounds[:northEast][:lng])
+
+    end
+
     # def self.search(query)
     #     if query 
     #         where("(lower(categories.category) LIKE :query OR lower(businesses.name) LIKE :query)", query: "%#{query.downcase}%")

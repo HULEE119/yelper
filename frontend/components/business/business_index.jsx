@@ -80,7 +80,6 @@ class BusinessIndex extends React.Component {
                                 }
                             </div>
                             <div className="business-index-page-business-map">
-                                {/* map box */}
                                 <BusinessMap />
                             </div>
                         </div>
