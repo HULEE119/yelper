@@ -4,24 +4,11 @@ import MarkerManager from "../../util/marker_manager";
 import { withRouter } from "react-router-dom";
 
 class BusinessMap extends React.Component {
-    constructor(props) {
-        super(props);
-
-    }
-
     componentDidMount() {
         let mapOptions;
-        if (this.props.business) {
+        if (businesses) {
             mapOptions = {
-                center: { lat: this.props.business.lat, lng: this.props.business.lng },
-                zoom: 13,
-            };
-        } else if (this.props.businesses) {
-            mapOptions = {
-                center: { 
-                    lat: this.props.businesses[0].lat,
-                    lng: this.props.businesses[0].lng
-                },
+                center: { lat: businesses[0].lat,lng: businesses[0].lng },
                 zoom: 13,
             };
         } else {
@@ -34,23 +21,22 @@ class BusinessMap extends React.Component {
         this.map = new google.maps.Map(this.mapNode, mapOptions);
         this.MarkerManager = new MarkerManager(this.map);
 
-        if ( this.props.business ) {
-            this.MarkerManager.createMarkerFromBusiness(this.props.business)
-        } else if ( this.props.businesses ) {
+        if ( businesses.length === 1 ) {
+            this.MarkerManager.createMarkerFromBusiness(businesses[0])
+        } else  {
             this.MarkerManager.removeAllMarkers();
             this.registerListeners();
-            this.updateMarkers(this.props.businesses);
+            this.MarkerManager.updateMarkers(businesses);
         }
     }
 
     componentDidUpdate() {
-        debugger;
-        if (this.props.business) {
-            const targetBusinessKey = Object.keys(this.props.businesses)[0];
-            const targetBusiness = this.props.businesses[targetBusinessKey];
+        if (business) {
+            const targetBusinessKey = Object.keys(businesses)[0];
+            const targetBusiness = businesses[targetBusinessKey];
             this.MarkerManager.updateMarkers([targetBusiness]);
         } else {
-            this.MarkerManager.updateMarkers(this.props.businesses);
+            this.MarkerManager.updateMarkers(businesses);
         }
     }
 
@@ -61,16 +47,16 @@ class BusinessMap extends React.Component {
                 northEast: { lat: north, lng: east },
                 southWest: { lat: south, lng: west }
             };
-            if (!this.updateMarker || this.updateMarker === undefined) {
+            if (!this.MarkerManager.updateMarker || this.MarkerManager.updateMarker === undefined) {
                 this.props.updateFilter("bounds", bounds);
                 this.props.history.push("/businesses");
             } else {
-                this.updateMarker = false;
+                this.MarkerManager.updateMarker = false;
             }
         });
         google.maps.event.addListener(this.map, "dragend", () => {
             this.props.history.push("/businesses");
-            this.updateMarker = false;
+            this.MarkerManager.updateMarker = false;
         });
     }
 

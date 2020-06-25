@@ -2,6 +2,11 @@ export default class MarkerManager {
     constructor(map) {
         this.map = map;
         this.markers = {};
+
+        this.updateMarkers = this.updateMarkers.bind(this);
+        this.createMarkerFromBusiness = this.createMarkerFromBusiness.bind(this);
+        this.removeMarker = this.removeMarker.bind(this);
+        this.removeAllMarkers = this.removeAllMarkers.bind(this);
     }
 
     updateMarkers(businesses) {
